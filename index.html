@@ -1,0 +1,129 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="skeleton.css">
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link rel="stylesheet" type="text/css" href="mini.css">
+        
+        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+        
+        <script type="text/javascript" src="toggle.js"></script>
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        
+    </head>
+    <body onload="hideInfoContainer()">
+        <div class="fullEnclosure">
+            <h1 id="name">Aruksh Patel</h1>
+            <h3 id="welcomeMessage">Welcome to my portfolio&hellip;</h3>
+
+            <div class="navbarContainer">
+                <ul class="navContainer">
+                    <div id="navButtons">
+                        <button id = "navButtonAboutMe" onclick="showAboutMe()">About Me</button>
+                    </div>
+                    
+
+                    <div id="hiddenAB">
+                        <h1 id="title">About Me</h1>
+                        <img id="imageMini" src="../EAP_Logo.png">
+<!---------------------------------------------------------------------->
+                        <h5 id="text">Lorem ipsum dolor sit amet, quo primis persecuti referrentur no. No animal facilis est. Id nec partem libris accusam, fuisset sapientem no sea, ad mei gubergren forensibus referrentur. Nam no disputationi reprehendunt, elitr habemus ei has.<br>Ex sit putent option, ludus numquam alienum ius at, nisl causae ut mel. Ne legere prompta numquam ius, ubique copiosae vituperata duo ea. Ut clita mandamus voluptatibus pro. Cu qui dicam salutandi suavitate, his ad case vero gubergren. Et per numquam habemus.<br>Cu decore disputationi vim, tation eleifend vis eu. Cu ius insolens delicata, mel assum aliquip meliore at. Putent diceret dolorem eam ad, ei vel mandamus adipiscing scribentur. Usu ut diceret legimus periculis, et est utinam nonumes, ei alii reque has.<br>Ea solum aperiri commune mel. Ex mea iusto eloquentiam. Et nam dicant decore aeterno, meliore deseruisse cu vel. Ea mutat animal vulputate nam. An nam diam prima possim, qui at maiorum instructior reprehendunt.<br>Vim voluptua moderatius no. Veri iriure prodesset ne qui, veri aliquam legimus te eum. Enim ludus nam te, te praesent iracundia duo. Ex eos vide aeque.</h5>
+<!---------------------------------------------------------------------->
+                    </div>
+                    
+                    <div id="navButtons">
+
+                        <button id = "navButtonResume" onclick="showResume()">Resume</button>
+
+                    </div>
+                    
+                    
+                    <div id="hiddenRE">
+                        <h1 id="title">Resume</h1>
+<!---------------------------------------------------------------------->
+                            <div>
+                                <iframe id="resumePDF" src="https://docs.google.com/viewer?srcid=1eziIXLd_VKm3Yq2e7bf0cf0zGdV7gijh&pid=explorer&efh=true&a=v&chrome=true&embedded=true" height="1075"></iframe>
+                            </div>
+                        </div>
+<!---------------------------------------------------------------------->
+                    <div id="navButtons">
+
+                        <button id = "navButtonProjects" onclick="showProjects()">Projects</button>
+
+                    </div>
+                    
+                    
+                    <div id="hiddenPR">
+                        <h1 id="title">Projects</h1>
+<!----------------------------------------------------------------------> 
+                        <div class="container">
+                            <div class="row">
+                                <div class="one column">
+                                    <p>HELLO</p>
+                                </div>
+                                <div class="eleven columns">
+                                    <p>HELLO</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+<!---------------------------------------------------------------------->
+
+                    <div id="navButtons">
+                        
+                        <button id = "navButtonGIT" onclick="showGIT()">Get in Touch</button>
+                        
+                    </div>
+                    
+                    <div id="hiddenGIT">
+                        <h1 id="title">Contact&hellip;</h1>
+<!---------------------------------------------------------------------->
+                        <label for="exampleEmailInput">Your email</label>
+                        <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+                    </div>
+<!----------------------------------------------------------------------> 
+                </ul>
+            </div>
+
+            
+<!----------------------------------------------------------------------> 
+            <div class="info" id="info">
+                <div id="infoContainer">
+                    <div class="infoContainer" id="aboutMe">
+                        <h1>About Me</h1>
+                        <div class="container">
+                            <div class="row">
+                                <div class="five columns">
+                                    <img class="image" src="../EAP_Logo.png">
+                                </div>
+                                <div class="seven columns">
+                                    <h5>Lorem ipsum dolor sit amet, quo primis persecuti referrentur no. No animal facilis est. Id nec partem libris accusam, fuisset sapientem no sea, ad mei gubergren forensibus referrentur. Nam no disputationi reprehendunt, elitr habemus ei has.<br>Ex sit putent option, ludus numquam alienum ius at, nisl causae ut mel. Ne legere prompta numquam ius, ubique copiosae vituperata duo ea. Ut clita mandamus voluptatibus pro. Cu qui dicam salutandi suavitate, his ad case vero gubergren. Et per numquam habemus.<br>Cu decore disputationi vim, tation eleifend vis eu. Cu ius insolens delicata, mel assum aliquip meliore at. Putent diceret dolorem eam ad, ei vel mandamus adipiscing scribentur. Usu ut diceret legimus periculis, et est utinam nonumes, ei alii reque has.<br>Ea solum aperiri commune mel. Ex mea iusto eloquentiam. Et nam dicant decore aeterno, meliore deseruisse cu vel. Ea mutat animal vulputate nam. An nam diam prima possim, qui at maiorum instructior reprehendunt.<br>Vim voluptua moderatius no. Veri iriure prodesset ne qui, veri aliquam legimus te eum. Enim ludus nam te, te praesent iracundia duo. Ex eos vide aeque.</h5>
+                                </div>
+                            </div>
+                        
+                        </div>
+                        
+                    </div>
+
+                    <div class="infoContainer" id="resume">
+                        <h1>Resume</h1>
+                        <br>
+                        <div>
+                            <iframe id="resumePDF" src="https://docs.google.com/viewer?srcid=1eziIXLd_VKm3Yq2e7bf0cf0zGdV7gijh&pid=explorer&efh=true&a=v&chrome=true&embedded=true" width="90%"></iframe>
+                            <br>
+                        </div>
+                    </div>
+
+                    <div class="infoContainer" id="projects">
+                        <h1>Projects</h1>
+                    </div>
+
+                    <div class="infoContainer" id="GIT">
+                        <h1>Contact&hellip;</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+
+</html>
