@@ -21,14 +21,12 @@
 
 @media all and (max-width:850px) {
     body{
-        margin:inherit;
-        padding: inherit;
+        margin:1vw;
     }
 
     .fullEnclosure {
         background-color:#dbdbdb;
-        width: ;
-        height: 80%;
+        width: 90vw;
         display: inline-block;
         border-radius: 1rem;
         margin-top:20px;
@@ -128,18 +126,22 @@
     }
     
     #hiddenAB{
-/*        display: none;*/
+        display: none;
+        animation: fadein .75s;
     }
     
     #hiddenRE{
-/*        display: none;*/
+        display: none;
+        animation: fadein .75s;
     }
     
     #hiddenPR{
-/*        display: none;*/
+        display: none;
+        animation: fadein .75s;
     }
     
     #hiddenGIT{
-/*        display: none;*/
+        display: none;
+        animation: fadein .75s;
     }
 }

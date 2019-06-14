@@ -41,7 +41,6 @@
     to   { opacity: 1; }
 }
 
-
 @keyframes animatedgradient {
 	0% {
 		background-position: 0% 50%;
@@ -57,8 +56,7 @@
 body{
     margin: inherit;
     text-align: center;
-/*    background: #FFF;*/
-    background: #1D1F20
+    background-color: #1D1F20;
 }
 
 .fullEnclosure{
@@ -195,7 +193,7 @@ button{
     color:black;
     border-radius: 2rem;
     display: none;
-    animation: fadein 1s;
+    animation: fadein .75s;
     
 }
 
@@ -208,7 +206,7 @@ button{
     border-radius: 2rem;
     display: none;
     height: auto;
-    animation: fadein 1s;
+    animation: fadein .75s;
 }
 
 #projects {
@@ -219,7 +217,7 @@ button{
     color:black;
     border-radius: 2rem;
     display: none;
-    animation: fadein 1s;
+    animation: fadein .75s;
 }
 
 #GIT {
@@ -230,7 +228,7 @@ button{
     color:black;
     border-radius: 2rem;
     display: none;
-    animation: fadein 1s;
+    animation: fadein .75s;
 }
 
 .image {
@@ -240,9 +238,18 @@ button{
     border-radius: 100%;
 }
 
+#contactForm {
+    margin: 5rem;
+    margin-bottom: 2rem;
+}
 
+#submitButton:hover {
+    font-size: 1.5rem;
+}
 
-
+#resetButton:hover {
+    font-size: 1.5rem;
+}
 
 
 

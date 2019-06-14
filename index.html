@@ -55,16 +55,21 @@
                     <div id="hiddenPR">
                         <h1 id="title">Projects</h1>
 <!----------------------------------------------------------------------> 
+                        
+                        <span>Sorry for the disappointment&hellip; <br> No projects available at the time :(</span>
+                        
+<!--
                         <div class="container">
                             <div class="row">
-                                <div class="one column">
-                                    <p>HELLO</p>
+                                <div class="six columns">
+                                    <h4><i>Project</i></h4>
                                 </div>
-                                <div class="eleven columns">
-                                    <p>HELLO</p>
+                                <div class="six columns">
+                                    <h4><i>Description</i></h4>
                                 </div>
                             </div>
                         </div>
+-->
                     </div>
 <!---------------------------------------------------------------------->
 
@@ -77,8 +82,23 @@
                     <div id="hiddenGIT">
                         <h1 id="title">Contact&hellip;</h1>
 <!---------------------------------------------------------------------->
-                        <label for="exampleEmailInput">Your email</label>
-                        <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+                        <form action="mailto:arukshjpatel@gmail.com" method="post" enctype="text/plain" id="contactForm">
+                            <div class="row">
+                                <div class="four columns">
+                                    <label for="EmailInput">Your Email&hellip;</label>
+                                    <input class="u-full-width" type="email" placeholder="youremail@domain.com" id="emailInput">
+                                </div>
+                                <div class="eight columns">
+                                    <label for="Subject">Subject&hellip;</label>
+                                    <input class="u-full-width" type="text" placeholder="Subject" id="contactSubject">
+                                </div>
+                                <label for="message">Message</label>
+                                <textarea class="u-full-width" placeholder="Hey Aruksh! Whats up..." id="contactMessage"></textarea>
+
+                                <input class="button-primary" type="submit" value="Submit" id="submitButton">
+                                <input class="button-primary" type="reset" value="Reset" id="resetButton">
+                            </div>
+                        </form>
                     </div>
 <!----------------------------------------------------------------------> 
                 </ul>
@@ -114,11 +134,43 @@
                     </div>
 
                     <div class="infoContainer" id="projects">
-                        <h1>Projects</h1>
+                        <h1><strong>Projects</strong></h1>
+                        
+                        <span>Sorry for the disappointment&hellip; <br> No projects available at the time :(</span>
+                        
+<!--
+                        <div class="container">
+                            <div class="row">
+                                <div class="six columns">
+                                    <h4><i>Project</i></h4>
+                                </div>
+                                <div class="six columns">
+                                    <h4><i>Description</i></h4>
+                                </div>
+                            </div>
+                        </div>
+-->
                     </div>
 
                     <div class="infoContainer" id="GIT">
-                        <h1>Contact&hellip;</h1>
+                        <h1>Contact Me&hellip;</h1>
+                        <form action="mailto:arukshjpatel@gmail.com" method="post" enctype="text/plain" id="contactForm">
+                            <div class="row">
+                                <div class="four columns">
+                                    <label for="EmailInput">Your Email&hellip;</label>
+                                    <input class="u-full-width" type="email" placeholder="youremail@domain.com" id="emailInput">
+                                </div>
+                                <div class="eight columns">
+                                    <label for="Subject">Subject&hellip;</label>
+                                    <input class="u-full-width" type="text" placeholder="Subject" id="contactSubject">
+                                </div>
+                                <label for="message">Message</label>
+                                <textarea class="u-full-width" placeholder="Hey Aruksh! Whats up..." id="contactMessage"></textarea>
+
+                                <input class="button-primary" type="submit" value="Submit" id="submitButton">
+                                <input class="button-primary" type="reset" value="Reset" id="resetButton">
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>

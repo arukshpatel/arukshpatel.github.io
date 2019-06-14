@@ -34,7 +34,6 @@ function showAboutMe() {
         
     } else {
         x.style.display = "none";
-        x.style.opacity = '0';
     }   
 }
 
@@ -56,7 +55,6 @@ function showResume() {
 
     } else {
         x.style.display = "none";
-        x.style.opacity = '0';
     }
 }
 
@@ -76,7 +74,6 @@ function showProjects() {
         x.style.display = "block";
     } else {
         x.style.display = "none";
-        x.style.opacity = '0';
     }
 }
 
@@ -96,6 +93,5 @@ function showGIT() {
         x.style.display = "block";
     } else {
         x.style.display = "none";
-        x.style.opacity = '0';
     }
 }
