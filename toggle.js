@@ -1,23 +1,21 @@
-function hideInfoContainer(){
-    'use strict';
-    var a = document.getElementById("hiddenAB");
-    var b = document.getElementById("hiddenRE");
-    var c = document.getElementById("hiddenPR");
-    var d = document.getElementById("hiddenGIT");
-    var e = document.getElementById("aboutMe");
-    var f = document.getElementById("resume");
-    var g = document.getElementById("projects");
-    var h = document.getElementById("GIT");
+function hideElements(){
     
-    
-    a.style.display = 'none';
-    b.style.display = 'none';
-    c.style.display = 'none';
-    d.style.display = 'none';
-    e.style.display = 'none';
-    f.style.display = 'none';
-    g.style.display = 'none';
-    h.style.display = 'none';
+    var a = document.getElementById("aboutMe");
+    a.style.display = "none";
+    var b = document.getElementById("hiddenAB");
+    b.style.display = "none";
+    var c = document.getElementById("resume");
+    c.style.display = "none";
+    var d = document.getElementById("hiddenRE");
+    d.style.display = "none";
+    var e = document.getElementById("projects");
+    e.style.display = "none";
+    var f = document.getElementById("hiddenPR");
+    f.style.display = "none";
+    var g = document.getElementById("GIT");
+    g.style.display = "none";
+    var h = document.getElementById("hiddenGIT");
+    h.style.display = "none";
 }
 
 function changeOpacity(x){
@@ -27,7 +25,6 @@ function changeOpacity(x){
     x.style.WebkitTransitionDuration = '1s';
     x.style.transitionDuration = '1s';
 }
-
 
 function showAboutMe() {
     'use strict';
@@ -40,15 +37,15 @@ function showAboutMe() {
     }
     
     if (x.style.display === "none") {
-        hideInfoContainer();
+        hideElements();
         x.style.display = "block";
         setTimeout(changeOpacity(x),2000);
-
     } else {
         x.style.display = "none";
         x.style.opacity = '0';
     }   
 }
+
 
 function showResume() {
     'use strict';
@@ -62,7 +59,7 @@ function showResume() {
     }
     
     if (x.style.display === "none") {
-        hideInfoContainer();
+        hideElements();
         x.style.display = "block";
         setTimeout(changeOpacity(x),2000);
 
@@ -84,10 +81,9 @@ function showProjects() {
     }
     
     if (x.style.display === "none") {
-        hideInfoContainer();
+        hideElements();
         x.style.display = "block";
         setTimeout(changeOpacity(x),2000);
-
     } else {
         x.style.display = "none";
         x.style.opacity = '0';
@@ -106,10 +102,9 @@ function showGIT() {
     }
     
     if (x.style.display === "none") {
-        hideInfoContainer();
+        hideElements();
         x.style.display = "block";
         setTimeout(changeOpacity(x),2000);
-
     } else {
         x.style.display = "none";
         x.style.opacity = '0';

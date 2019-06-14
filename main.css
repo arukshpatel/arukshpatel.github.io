@@ -1,7 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:200');
+
+#body{
+    margin-top: 25px;
+    font-size: 21px;
+    text-align: center;
+
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes animatedgradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 body{
     margin: inherit;
     text-align: center;
-    background: #FFF;
+/*    background: #FFF;*/
+    background: #1D1F20
 }
 
 .fullEnclosure{
@@ -12,7 +68,23 @@ body{
     margin-top: 24rem;
     margin-left: 2rem;
     margin-right: 2rem;
+    --borderWidth: 1rem;
+    position: relative;
     
+}
+
+.fullEnclosure:after{
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    border-radius: calc(2 * var(--borderWidth));
+    z-index: -1;
+    animation: animatedgradient 3s ease alternate infinite;
+    background-size: 300% 300%;
 }
 
 #navButtonAboutMe{
@@ -99,18 +171,18 @@ button{
 .info{
     text-align: center;
     background-color: transparent;
-    margin-left: 5rem;
-    margin-right: 5rem;
-    margin-bottom: 1rem;
+    margin:5rem;
+    margin-bottom: .5rem;
     border-radius: 2rem;
 }
+
 #infoContainer{
-    width: 95rem;
-    display:inline-block;
+    width: 100%;
     background: #FFF;
     border-radius: 2rem;
     border-radius: 2rem;
     height: auto;
+    display: block;
 }
 
 
@@ -122,6 +194,7 @@ button{
     color:black;
     border-radius: 2rem;
     opacity: 0;
+    display: none;
 }
 
 #resume {
@@ -132,6 +205,7 @@ button{
     color:black;
     border-radius: 2rem;
     opacity: 0;
+    display: none;
 }
 
 #projects {
@@ -142,6 +216,7 @@ button{
     color:black;
     border-radius: 2rem;
     opacity: 0;
+    display: none;
 }
 
 #GIT {
@@ -152,32 +227,13 @@ button{
     color:black;
     border-radius: 2rem;
     opacity: 0;
+    display: none;
 }
 
 .image {
     max-width: 100%;
     height: auto;
     text-align: center;
-}
-
-@media all and (min-width:850px)
-{
-    #hiddenAB {
-        display: none !important;
-    }
-
-    #hiddenPR {
-        display: none !important;
-    }
-
-    #hiddenRE {
-        display: none !important;
-    }
-
-    #hiddenGIT {
-        display: none !important;
-    }
-    
 }
 
 
