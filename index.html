@@ -1,67 +1,70 @@
+<!doctype html>
 <html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="CSS/main.css">
-        <link rel="stylesheet" type="text/css" href="CSS/max_min.css">
-        <link rel="stylesheet" type="text/css" href="CSS/skeleton.css">
-        <link rel="icon" href="Images/logo_a3r_icon.ico">
-        
-        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-        
-        <script type="text/javascript" src="Script/toggle.js"></script>
-        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-        
-        <title>Aruksh's Portfolio</title>
-        
-    </head>
-    <body id="body">
-        <div class="fullEnclosure">
-            <h1 id="name">Aruksh Patel</h1>
-            <h3 id="welcomeMessage">Welcome to my portfolio&hellip;</h3>
 
-            <div class="navbarContainer">
-                <ul class="navContainer">
-                    <div id="navButtons">
-                        <button id = "navButtonAboutMe" onclick="showAboutMe()">About Me</button>
+<head>
+    <link rel="stylesheet" type="text/css" href="CSS/main.css">
+    <link rel="stylesheet" type="text/css" href="CSS/max_min.css">
+    <link rel="stylesheet" type="text/css" href="CSS/skeleton.css">
+    <link rel="icon" href="Images/logo_a3r_icon.ico">
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
+    <script type="text/javascript" src="Script/toggle.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+    <title>Aruksh's Portfolio</title>
+
+</head>
+
+<body id="body">
+    <div class="fullEnclosure">
+        <h1 id="name">Aruksh Patel</h1>
+        <h3 id="welcomeMessage">Welcome to my portfolio&hellip;</h3>
+
+        <div class="navbarContainer">
+            <ul class="navContainer">
+                <div id="navButtons">
+                    <button id="navButtonAboutMe" onclick="showAboutMe()">About Me</button>
+                </div>
+
+
+                <div id="hiddenAB">
+                    <h1 id="title">About Me</h1>
+                    <img id="imageMini" src="Images/profilepic.jpeg">
+                    <!---------------------------------------------------------------------->
+                    <h5 id="text">Hello! My name is Aruksh Patel. I'm currently enrolled at University of Oklahoma as a Computer Science and Pre-Med student. Besides from coding and learning new medical matrial, I really enjoy photography and videography alongside with editing the material.</h5>
+                    <!---------------------------------------------------------------------->
+                </div>
+
+                <div id="navButtons">
+
+                    <button id="navButtonResume" onclick="showResume()">Resume</button>
+
+                </div>
+
+
+                <div id="hiddenRE">
+                    <h1 id="title">Resume</h1>
+                    <!---------------------------------------------------------------------->
+                    <div>
+                        <object class="embedResume" type="application/pdf" data="Data/Resume.pdf?#zoom=inherit&scrollbar=0&toolbar=0&navpanes=0" height width="80%"></object>
                     </div>
-                    
+                </div>
+                <!---------------------------------------------------------------------->
+                <div id="navButtons">
 
-                    <div id="hiddenAB">
-                        <h1 id="title">About Me</h1>
-                        <img id="imageMini" src="Images/profilepic.jpeg">
-<!---------------------------------------------------------------------->
-                        <h5 id="text">Hello! My name is Aruksh Patel. I'm currently enrolled at University of Oklahoma as a Computer Science and Pre-Med student. Besides from coding and learning new medical matrial, I really enjoy photography and videography alongside with editing the material.</h5>
-<!---------------------------------------------------------------------->
-                    </div>
-                    
-                    <div id="navButtons">
+                    <button id="navButtonProjects" onclick="showProjects()">Projects</button>
 
-                        <button id = "navButtonResume" onclick="showResume()">Resume</button>
+                </div>
 
-                    </div>
-                    
-                    
-                    <div id="hiddenRE">
-                        <h1 id="title">Resume</h1>
-<!---------------------------------------------------------------------->
-                            <div>
-                                <object class="embedResume" type="application/pdf" data="Data/Resume.pdf?#zoom=inherit&scrollbar=0&toolbar=0&navpanes=0" height width="80%"></object>
-                            </div>
-                        </div>
-<!---------------------------------------------------------------------->
-                    <div id="navButtons">
 
-                        <button id = "navButtonProjects" onclick="showProjects()">Projects</button>
+                <div id="hiddenPR">
+                    <h1 id="title">Projects</h1>
+                    <!---------------------------------------------------------------------->
 
-                    </div>
-                    
-                    
-                    <div id="hiddenPR">
-                        <h1 id="title">Projects</h1>
-<!----------------------------------------------------------------------> 
-                        
-                        <span>Sorry for the disappointment&hellip; <br> No projects available at the time :(</span>
-                        
-<!--
+                    <span>Sorry for the disappointment&hellip; <br> No projects available at the time :(</span>
+
+                    <!--
                         <div class="container">
                             <div class="row">
                                 <div class="six columns">
@@ -73,76 +76,76 @@
                             </div>
                         </div>
 -->
-                    </div>
-<!---------------------------------------------------------------------->
+                </div>
+                <!---------------------------------------------------------------------->
 
-                    <div id="navButtons">
-                        
-                        <button id = "navButtonGIT" onclick="showGIT()">Get in Touch</button>
-                        
-                    </div>
-                    
-                    <div id="hiddenGIT">
-                        <h1 id="title">Contact&hellip;</h1>
-<!---------------------------------------------------------------------->
-                        <form action="mailto:arukshjpatel@gmail.com" method="post" enctype="text/plain" id="contactForm">
-                            <div class="row">
-                                <div class="four columns">
-                                    <label for="EmailInput">Your Email&hellip;</label>
-                                    <input class="u-full-width" type="email" placeholder="youremail@domain.com" id="emailInput">
-                                </div>
-                                <div class="eight columns">
-                                    <label for="Subject">Subject&hellip;</label>
-                                    <input class="u-full-width" type="text" placeholder="Subject" id="contactSubject">
-                                </div>
-                                <label for="message">Message</label>
-                                <textarea class="u-full-width" placeholder="Hey Aruksh! Whats up..." id="contactMessage"></textarea>
+                <div id="navButtons">
 
-                                <input class="button-primary" type="submit" value="Submit" id="submitButton">
-                                <input class="button-primary" type="reset" value="Reset" id="resetButton">
+                    <button id="navButtonGIT" onclick="showGIT()">Get in Touch</button>
+
+                </div>
+
+                <div id="hiddenGIT">
+                    <h1 id="title">Contact&hellip;</h1>
+                    <!---------------------------------------------------------------------->
+                    <form action="mailto:arukshjpatel@gmail.com" method="post" enctype="text/plain" id="contactForm">
+                        <div class="row">
+                            <div class="four columns">
+                                <label for="EmailInput">Your Email&hellip;</label>
+                                <input class="u-full-width" type="email" placeholder="youremail@domain.com" id="emailInput">
                             </div>
-                        </form>
-                    </div>
-<!----------------------------------------------------------------------> 
-                </ul>
-            </div>
-
-            
-<!----------------------------------------------------------------------> 
-            <div class="info" id="info">
-                <div id="infoContainer">
-                    <div class="infoContainer" id="aboutMe">
-                        <h1>About Me</h1>
-                        <div class="container">
-                            <div class="row">
-                                <div class="five columns">
-                                    <img class="image" src="Images/profilepic.jpeg">
-                                </div>
-                                <div class="seven columns">
-                                    <h5>Hello! My name is Aruksh Patel. I'm currently enrolled at University of Oklahoma as a Computer Science and Pre-Med student. Besides from coding and learning new medical matrial, I really enjoy photography and videography alongside with editing the material.</h5>
-                                </div>
+                            <div class="eight columns">
+                                <label for="Subject">Subject&hellip;</label>
+                                <input class="u-full-width" type="text" placeholder="Subject" id="contactSubject">
                             </div>
-                        
+                            <label for="message">Message</label>
+                            <textarea class="u-full-width" placeholder="Hey Aruksh! Whats up..." id="contactMessage"></textarea>
+
+                            <input class="button-primary" type="submit" value="Submit" id="submitButton">
+                            <input class="button-primary" type="reset" value="Reset" id="resetButton">
                         </div>
-                        
+                    </form>
+                </div>
+                <!---------------------------------------------------------------------->
+            </ul>
+        </div>
+
+
+        <!---------------------------------------------------------------------->
+        <div class="info" id="info">
+            <div id="infoContainer">
+                <div class="infoContainer" id="aboutMe">
+                    <h1>About Me</h1>
+                    <div class="container">
+                        <div class="row">
+                            <div class="five columns">
+                                <img class="image" src="Images/profilepic.jpeg">
+                            </div>
+                            <div class="seven columns">
+                                <h5>Hello! My name is Aruksh Patel. I'm currently enrolled at University of Oklahoma as a Computer Science and Pre-Med student. Besides from coding and learning new medical matrial, I really enjoy photography and videography alongside with editing the material.</h5>
+                            </div>
+                        </div>
+
                     </div>
 
-                    <div class="infoContainer" id="resume">
-                        <h1>Resume</h1>
+                </div>
+
+                <div class="infoContainer" id="resume">
+                    <h1>Resume</h1>
+                    <br>
+                    <div>
+                        <!--                            <iframe id="resumePDF" src="https://docs.google.com/viewer?srcid=1eziIXLd_VKm3Yq2e7bf0cf0zGdV7gijh&pid=explorer&efh=true&a=v&chrome=true&embedded=true" height = "70%" width="90%"></iframe>-->
+                        <object class="embedResume" type="application/pdf" data="Data/Resume.pdf?#zoom=inherit&scrollbar=0&toolbar=0&navpanes=0" height="100%" width="80%"></object>
                         <br>
-                        <div>
-<!--                            <iframe id="resumePDF" src="https://docs.google.com/viewer?srcid=1eziIXLd_VKm3Yq2e7bf0cf0zGdV7gijh&pid=explorer&efh=true&a=v&chrome=true&embedded=true" height = "70%" width="90%"></iframe>-->
-                            <object class="embedResume" type="application/pdf" data="Data/Resume.pdf?#zoom=inherit&scrollbar=0&toolbar=0&navpanes=0" height="100%" width="80%"></object>
-                            <br>
-                        </div>
                     </div>
+                </div>
 
-                    <div class="infoContainer" id="projects">
-                        <h1><strong>Projects</strong></h1>
-                        
-                        <span>Sorry for the disappointment&hellip; <br> No projects available at the time :(</span>
-                        
-<!--
+                <div class="infoContainer" id="projects">
+                    <h1><strong>Projects</strong></h1>
+
+                    <span>Sorry for the disappointment&hellip; <br> No projects available at the time :(</span>
+
+                    <!--
                         <div class="container">
                             <div class="row">
                                 <div class="six columns">
@@ -154,32 +157,32 @@
                             </div>
                         </div>
 -->
-                    </div>
+                </div>
 
-                    <div class="infoContainer" id="GIT">
-                        <h1>Contact Me&hellip;</h1>
-                        <form action="mailto:arukshjpatel@gmail.com" method="post" enctype="text/plain" id="contactForm">
-                            <div class="row">
-                                <div class="four columns">
-                                    <label for="EmailInput">Your Email&hellip;</label>
-                                    <input class="u-full-width" type="email" placeholder="youremail@domain.com" id="emailInput">
-                                </div>
-                                <div class="eight columns">
-                                    <label for="Subject">Subject&hellip;</label>
-                                    <input class="u-full-width" type="text" placeholder="Subject" id="contactSubject">
-                                </div>
-                                <label for="message">Message</label>
-                                <textarea class="u-full-width" placeholder="Hey Aruksh! Whats up..." id="contactMessage"></textarea>
-
-                                <input class="button-primary" type="submit" value="Submit" id="submitButton">
-                                <input class="button-primary" type="reset" value="Reset" id="resetButton">
+                <div class="infoContainer" id="GIT">
+                    <h1>Contact Me&hellip;</h1>
+                    <form action="mailto:arukshjpatel@gmail.com" method="post" enctype="text/plain" id="contactForm">
+                        <div class="row">
+                            <div class="four columns">
+                                <label for="EmailInput">Your Email&hellip;</label>
+                                <input class="u-full-width" type="email" placeholder="youremail@domain.com" id="emailInput">
                             </div>
-                        </form>
-                    </div>
+                            <div class="eight columns">
+                                <label for="Subject">Subject&hellip;</label>
+                                <input class="u-full-width" type="text" placeholder="Subject" id="contactSubject">
+                            </div>
+                            <label for="message">Message</label>
+                            <textarea class="u-full-width" placeholder="Hey Aruksh! Whats up..." id="contactMessage"></textarea>
+
+                            <input class="button-primary" type="submit" value="Submit" id="submitButton">
+                            <input class="button-primary" type="reset" value="Reset" id="resetButton">
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
-    </body>
+    </div>
+</body>
 
 
 </html>
