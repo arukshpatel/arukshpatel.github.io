@@ -1,129 +1,103 @@
+<!doctype html>
 <html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="skeleton.css">
-        <link rel="stylesheet" type="text/css" href="main.css">
-        <link rel="stylesheet" type="text/css" href="mini.css">
-        
-        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-        
-        <script type="text/javascript" src="toggle.js"></script>
-        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-        
-    </head>
-    <body onload="hideInfoContainer()">
-        <div class="fullEnclosure">
-            <h1 id="name">Aruksh Patel</h1>
-            <h3 id="welcomeMessage">Welcome to my portfolio&hellip;</h3>
 
-            <div class="navbarContainer">
-                <ul class="navContainer">
-                    <div id="navButtons">
-                        <button id = "navButtonAboutMe" onclick="showAboutMe()">About Me</button>
-                    </div>
-                    
+<head>
+    <link rel="stylesheet" type="text/css" href="CSS/main_index.css">
 
-                    <div id="hiddenAB">
-                        <h1 id="title">About Me</h1>
-                        <img id="imageMini" src="../EAP_Logo.png">
-<!---------------------------------------------------------------------->
-                        <h5 id="text">Lorem ipsum dolor sit amet, quo primis persecuti referrentur no. No animal facilis est. Id nec partem libris accusam, fuisset sapientem no sea, ad mei gubergren forensibus referrentur. Nam no disputationi reprehendunt, elitr habemus ei has.<br>Ex sit putent option, ludus numquam alienum ius at, nisl causae ut mel. Ne legere prompta numquam ius, ubique copiosae vituperata duo ea. Ut clita mandamus voluptatibus pro. Cu qui dicam salutandi suavitate, his ad case vero gubergren. Et per numquam habemus.<br>Cu decore disputationi vim, tation eleifend vis eu. Cu ius insolens delicata, mel assum aliquip meliore at. Putent diceret dolorem eam ad, ei vel mandamus adipiscing scribentur. Usu ut diceret legimus periculis, et est utinam nonumes, ei alii reque has.<br>Ea solum aperiri commune mel. Ex mea iusto eloquentiam. Et nam dicant decore aeterno, meliore deseruisse cu vel. Ea mutat animal vulputate nam. An nam diam prima possim, qui at maiorum instructior reprehendunt.<br>Vim voluptua moderatius no. Veri iriure prodesset ne qui, veri aliquam legimus te eum. Enim ludus nam te, te praesent iracundia duo. Ex eos vide aeque.</h5>
-<!---------------------------------------------------------------------->
-                    </div>
-                    
-                    <div id="navButtons">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-                        <button id = "navButtonResume" onclick="showResume()">Resume</button>
+    <link rel="icon" href="Images/logo_a3r_icon.ico">
 
-                    </div>
-                    
-                    
-                    <div id="hiddenRE">
-                        <h1 id="title">Resume</h1>
-<!---------------------------------------------------------------------->
-                            <div>
-                                <iframe id="resumePDF" src="https://docs.google.com/viewer?srcid=1eziIXLd_VKm3Yq2e7bf0cf0zGdV7gijh&pid=explorer&efh=true&a=v&chrome=true&embedded=true" height="1075"></iframe>
-                            </div>
-                        </div>
-<!---------------------------------------------------------------------->
-                    <div id="navButtons">
+    <script type="text/javascript" src="Script/toggle.js"></script>
 
-                        <button id = "navButtonProjects" onclick="showProjects()">Projects</button>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 
-                    </div>
-                    
-                    
-                    <div id="hiddenPR">
-                        <h1 id="title">Projects</h1>
-<!----------------------------------------------------------------------> 
-                        <div class="container">
-                            <div class="row">
-                                <div class="one column">
-                                    <p>HELLO</p>
-                                </div>
-                                <div class="eleven columns">
-                                    <p>HELLO</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-<!---------------------------------------------------------------------->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
 
-                    <div id="navButtons">
-                        
-                        <button id = "navButtonGIT" onclick="showGIT()">Get in Touch</button>
-                        
-                    </div>
-                    
-                    <div id="hiddenGIT">
-                        <h1 id="title">Contact&hellip;</h1>
-<!---------------------------------------------------------------------->
-                        <label for="exampleEmailInput">Your email</label>
-                        <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
-                    </div>
-<!----------------------------------------------------------------------> 
-                </ul>
-            </div>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
 
-            
-<!----------------------------------------------------------------------> 
-            <div class="info" id="info">
-                <div id="infoContainer">
-                    <div class="infoContainer" id="aboutMe">
-                        <h1>About Me</h1>
-                        <div class="container">
-                            <div class="row">
-                                <div class="five columns">
-                                    <img class="image" src="../EAP_Logo.png">
-                                </div>
-                                <div class="seven columns">
-                                    <h5>Lorem ipsum dolor sit amet, quo primis persecuti referrentur no. No animal facilis est. Id nec partem libris accusam, fuisset sapientem no sea, ad mei gubergren forensibus referrentur. Nam no disputationi reprehendunt, elitr habemus ei has.<br>Ex sit putent option, ludus numquam alienum ius at, nisl causae ut mel. Ne legere prompta numquam ius, ubique copiosae vituperata duo ea. Ut clita mandamus voluptatibus pro. Cu qui dicam salutandi suavitate, his ad case vero gubergren. Et per numquam habemus.<br>Cu decore disputationi vim, tation eleifend vis eu. Cu ius insolens delicata, mel assum aliquip meliore at. Putent diceret dolorem eam ad, ei vel mandamus adipiscing scribentur. Usu ut diceret legimus periculis, et est utinam nonumes, ei alii reque has.<br>Ea solum aperiri commune mel. Ex mea iusto eloquentiam. Et nam dicant decore aeterno, meliore deseruisse cu vel. Ea mutat animal vulputate nam. An nam diam prima possim, qui at maiorum instructior reprehendunt.<br>Vim voluptua moderatius no. Veri iriure prodesset ne qui, veri aliquam legimus te eum. Enim ludus nam te, te praesent iracundia duo. Ex eos vide aeque.</h5>
-                                </div>
-                            </div>
-                        
-                        </div>
-                        
-                    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 
-                    <div class="infoContainer" id="resume">
-                        <h1>Resume</h1>
-                        <br>
-                        <div>
-                            <iframe id="resumePDF" src="https://docs.google.com/viewer?srcid=1eziIXLd_VKm3Yq2e7bf0cf0zGdV7gijh&pid=explorer&efh=true&a=v&chrome=true&embedded=true" width="90%"></iframe>
-                            <br>
-                        </div>
-                    </div>
+    <title class="next-head">Aruksh Patel</title>
 
-                    <div class="infoContainer" id="projects">
-                        <h1>Projects</h1>
-                    </div>
+</head>
 
-                    <div class="infoContainer" id="GIT">
-                        <h1>Contact&hellip;</h1>
-                    </div>
+<body class="">
+    <nav class="navbar navbar-expand-lg navbar-light shadow-lg">
+        <a class="navbar-brand mx-4" href="index.html">Aruksh Patel</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <!-- <li class="nav-item active mx-3">
+                    <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                </li> -->
+                <li class="nav-item mx-3">
+                    <a class="nav-link" href="#">Projects</a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="container" style="margin-top: 100px;">
+            <div class="jumbotron bg-light text-secondary shadow" style="border-radius: 17px;">
+                <div class="container justify-content-center">
+                    <h1 class="display-4 text-center" style="word-spacing: 3rem;">ARUKSH PATEL</h1>
+                    <p class="lead">
+                        This is a modified jumbotron that occupies the entire horizontal space of its parent.
+                    </p>
                 </div>
             </div>
         </div>
-    </body>
+    </div>
 
-
-</html>
+    <div class="shadow p-3 iconContainer">
+        <div class="text-left">
+            <div class="socialHomeItem">
+                <a href="#" target="_blank">
+                    <img class="icon" src="./Images/iconpack/github.png">
+                </a>
+            </div>
+            <div class="socialHomeItem">
+                <a href="#" target="_blank">
+                    <img class="icon" src="./Images/iconpack/linkedin.png">
+                </a>
+            </div>
+            <div class="socialHomeItem">
+                <a href="#" target="_blank">
+                    <img class="icon" src="./Images/iconpack/facebook.png">
+                </a>
+            </div>
+            <div class="socialHomeItem">
+                <a href="#" target="_blank">
+                    <img class="icon" src="./Images/iconpack/instagram.png">
+                </a>
+            </div>
+            <div class="socialHomeItem">
+                <a href="#" target="_blank">
+                    <img class="icon" src="./Images/iconpack/snapchat.png">
+                </a>
+            </div>
+            <div class="socialHomeItem">
+                <a href="#" target="_blank">
+                    <img class="icon" src="./Images/iconpack/twitter.png">
+                </a>
+            </div>
+        </div>
+    </div>
+</body>

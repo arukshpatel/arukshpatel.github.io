@@ -1,18 +1,38 @@
+@media all and (min-width:850px)
+{
+    #hiddenAB {
+        display: none;
+    }
+
+    #hiddenPR {
+        display: none;
+    }
+
+    #hiddenRE {
+        display: none;
+    }
+
+    #hiddenGIT {
+        display: none;
+    }
+    
+}
+
+
 @media all and (max-width:850px) {
     body{
-        margin:inherit;
-        padding: inherit;
+        margin:1vw;
     }
 
     .fullEnclosure {
         background-color:#dbdbdb;
-        width: 100%;
-        height: 100%;
+        width: 90vw;
         display: inline-block;
         border-radius: 1rem;
-        margin: 0;
+        margin-top:20px;
         padding-top: 10px;
     }
+    
     #name {
         font-size:8.5vw;
         font-weight:bold;
@@ -76,22 +96,6 @@
         margin: 0rem;
     }
     
-    #aboutMe{
-        display: none !important;
-    }
-    
-    #resume{
-        display: none !important;
-    }
-    
-    #projects{
-        display: none !important;
-    }
-    
-    #GIT{
-        display: none !important;
-    }
-    
     .info{
         text-align: center;
         margin-left:2rem;
@@ -121,4 +125,23 @@
         width: 100%;
     }
     
+    #hiddenAB{
+        display: none;
+        animation: fadein .75s;
+    }
+    
+    #hiddenRE{
+        display: none;
+        animation: fadein .75s;
+    }
+    
+    #hiddenPR{
+        display: none;
+        animation: fadein .75s;
+    }
+    
+    #hiddenGIT{
+        display: none;
+        animation: fadein .75s;
+    }
 }

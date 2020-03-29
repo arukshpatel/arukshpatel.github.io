@@ -1,0 +1,25 @@
+nav {
+    position: absolute;
+}
+
+.mainContainer {
+    border-radius: 17px;
+    max-width: 300px;
+}
+
+.icon {
+    width: 2em;
+}
+
+.socialHomeItem {
+    margin: 0px;
+    padding: 5px;
+}
+
+.iconContainer {
+    width: fit-content;
+    margin-top: -300px;
+    border-top-right-radius: 17px;
+    border-bottom-right-radius: 17px;
+    position: relative;
+}
