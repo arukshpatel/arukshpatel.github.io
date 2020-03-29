@@ -33,14 +33,14 @@
 }
 
 .mainContent {
-    margin-top: 3rem;
     background-color: rgb(119, 33, 22);
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
 }
 
-.container {
-    padding: 50vh;
+.p40vh {
+    padding: 40vh;
 }
