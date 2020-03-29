@@ -1,1 +1,0 @@
-# arukshpatel.github.io
