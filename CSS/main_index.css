@@ -1,3 +1,10 @@
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
 .mainContainer {
     border-radius: 17px;
     max-width: 300px;
@@ -44,3 +51,33 @@
 .p40vh {
     padding: 40vh;
 }
+
+.mainContent hr {
+    width: 50vw;
+    color: white;
+    background-color: white;
+}
+
+.readMore {
+    margin-top: -75px;
+    text-decoration: none;
+}
+
+.readMore:hover {
+    text-decoration: none;
+}
+
+.secondContent {
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+
+a[ id= "readMoreLink" ]:target ~ #secondContent h1#secondContent {
+    -webkit-transform: translateY( 400px);
+    transform: translateY( 400px );
+    }

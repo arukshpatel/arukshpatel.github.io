@@ -9,6 +9,7 @@
 
     <link rel="icon" href="Images/logo_a3r_icon.ico">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -24,10 +25,38 @@
         crossorigin="anonymous"></script>
 
     <title class="next-head">Aruksh Patel</title>
+<!-- 
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+                    console.log(event);
+                    // Store hash
+                    var hash = this.hash;
+                    console.log(this.hash);
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script> -->
 
 </head>
 
 <body>
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light shadow sticky-top">
         <a class="navbar-brand mx-4" href="index.html" style="letter-spacing: .2rem;">ARUKSH PATEL</a>
 
@@ -56,18 +85,21 @@
                 <p class="lead" style="word-spacing: 3rem; letter-spacing: 0.5rem;">
                     EAT. CODE. SLEEP. REPEAT.
                 </p>
+                <!-- <hr> -->
             </div>
         </div>
-        <hr>
-        <div class="text-center">
-            <h6 class="" style="letter-spacing: .5rem; color: black;">Read More...</h3>
-            <a href="#">
-                <img class="icon" src="./Images/iconpack/down.png">
+        <div class="text-center readMore smooth-scroll">
+            <a id="readMoreLink" href="#secondContent" target="_blank">
+                <h6 id="readmore" style="letter-spacing: .5rem; color: black;">Read More...</h3>
+                    <img class="icon" src="./Images/iconpack/down.png">
             </a>
         </div>
     </div>
 
-    <div class="shadow-lg iconContainer bg-dark fixed-top fadeOut">
+    <div class="secondContent bg-dark text-light">
+        <h1 id="secondContent">Hello World</h1>
+    </div>
+    <div class="shadow-lg iconContainer bg-dark fixed-top">
         <div class="text-left">
             <div class="socialHomeItem">
                 <a href="https://github.com/arukshpatel" target="_blank">
