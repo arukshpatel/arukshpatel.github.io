@@ -14,7 +14,7 @@
 }
 
 .iconContainer {
-    margin-top: 95px;
+    margin-top: 50vh;
     width: fit-content;
     border-top-right-radius: 17px;
     border-bottom-right-radius: 17px;
@@ -26,12 +26,21 @@
     }
 }
 
-.container {
-    margin-top: 100px;
-}
-
 .navbar-items {
     margin-left: 10px;
     margin-right: 10px;
     letter-spacing: 2px;
+}
+
+.mainContent {
+    margin-top: 3rem;
+    background-color: rgb(119, 33, 22);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    padding: 50vh;
 }
