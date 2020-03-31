@@ -2,31 +2,26 @@
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="CSS/main_index.css">
+    <title class="next-head">Aruksh Patel</title>
 
+    <link rel="stylesheet" type="text/css" href="CSS/main_index.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <link rel="icon" href="Images/logo_a3r_icon.ico">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
-
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
 
-    <title class="next-head">Aruksh Patel</title>
-<!-- 
-    <script>
+    <!-- <script>
         $(document).ready(function () {
             // Add smooth scrolling to all links
             $("a").on('click', function (event) {
@@ -35,10 +30,10 @@
                 if (this.hash !== "") {
                     // Prevent default anchor click behavior
                     event.preventDefault();
-                    console.log(event);
+
                     // Store hash
                     var hash = this.hash;
-                    console.log(this.hash);
+
                     // Using jQuery's animate() method to add smooth page scroll
                     // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
                     $('html, body').animate({
@@ -51,6 +46,13 @@
                 } // End if
             });
         });
+    </script>
+    <script>
+        $('#myModal').on('show.bs.modal', function (e) {
+            if (!data) {
+                return e.preventDefault() // stops modal from being shown
+            }
+        })
     </script> -->
 
 </head>
@@ -77,28 +79,6 @@
             </ul>
         </div>
     </nav>
-
-    <div class="mainContent" id="mainContent">
-        <div class="p40vh text-light text-center">
-            <div class="container">
-                <h1 class="display-4" style="word-spacing: 3rem; letter-spacing: 1rem;">ARUKSH PATEL</h1>
-                <p class="lead" style="word-spacing: 3rem; letter-spacing: 0.5rem;">
-                    EAT. CODE. SLEEP. REPEAT.
-                </p>
-                <!-- <hr> -->
-            </div>
-        </div>
-        <div class="text-center readMore smooth-scroll">
-            <a id="readMoreLink" href="#secondContent" target="_blank">
-                <h6 id="readmore" style="letter-spacing: .5rem; color: black;">Read More...</h3>
-                    <img class="icon" src="./Images/iconpack/down.png">
-            </a>
-        </div>
-    </div>
-
-    <div class="secondContent bg-dark text-light">
-        <h1 id="secondContent">Hello World</h1>
-    </div>
     <div class="shadow-lg iconContainer bg-dark fixed-top">
         <div class="text-left">
             <div class="socialHomeItem">
@@ -133,6 +113,47 @@
             </div>
         </div>
     </div>
+
+    <div class="mainContent" id="mainContent">
+        <div class="p40vh text-light text-center">
+            <div class="container">
+                <div id="mainContentInfo" class="justify-content-center text-center">
+                    <h1 class="display-4 font-weight-light" style="word-spacing: 3rem; letter-spacing: 1rem;">ARUKSH
+                        PATEL</h1>
+                    <p class="lead text-wrap font-weight-bold text-monospace"
+                        style="word-spacing: 3rem; letter-spacing: 0.5rem;">
+                        EAT. CODE. SLEEP. REPEAT.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="readMoreInfo" class="text-center">
+            <div class="row">
+                <p class="col text-monospace" style="color: black; letter-spacing: .5rem;">
+                    <a class="text-decoration-none text-center" href="#secondContent">
+                        Read More...
+                        <img class="icon" src="./Images/iconpack/down.png">
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="secondContent bg-dark text-light">
+        <div id="secondContentContainer" class="container">
+            <h1 id="secondHelloWorld">Hello World</h1>
+        </div>
+
+    </div>
+
+    <div class="thirdContent bg-primary text-dark">
+        <div id="thirdContentContainer" class="container">
+            <h1 id="thirdHelloWorld">Hello World</h1>
+        </div>
+
+    </div>
+
 </body>
 
 </html>

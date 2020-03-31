@@ -40,8 +40,9 @@ a {
 }
 
 .mainContent {
-    background-color: rgb(119, 33, 22);
+    background-color: rgb(153, 66, 55);
     height: 100vh;
+    max-height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -52,20 +53,25 @@ a {
     padding: 40vh;
 }
 
-.mainContent hr {
-    width: 50vw;
-    color: white;
-    background-color: white;
+#mainContentInfo {
+    position: fixed;
 }
 
-.readMore {
-    margin-top: -75px;
-    text-decoration: none;
+#readMoreInfo {
+    margin-top: -5vh;
+    position: fixed;
+    bottom: 0;
+    right: 50vw;
+    left: 50vw;
+    max-width: fit-content;
 }
 
-.readMore:hover {
-    text-decoration: none;
-}
+/* @media all and (max-width: 900px) {
+    
+    #readMoreInfo {
+        display: none;
+    }
+} */
 
 .secondContent {
     height: 100vh;
@@ -74,10 +80,3 @@ a {
     background-size: cover;
     position: relative;
 }
-
-
-
-a[ id= "readMoreLink" ]:target ~ #secondContent h1#secondContent {
-    -webkit-transform: translateY( 400px);
-    transform: translateY( 400px );
-    }
