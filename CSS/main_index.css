@@ -49,7 +49,6 @@ a {
 }
 
 #mainContentInfo {
-    position: relative;
     max-height: 5rem;
 }
 
@@ -81,9 +80,25 @@ a {
 
 .secondContent {
     background-color: rgb(36, 36, 36);
-    height: 50vh;
+    height: fit-content;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+}
+
+#secondContentContainer {
+    padding: 100px;
+}
+
+#description {
+    width: 90%;
+    font-weight: 350 !important;
+    word-spacing: .15rem;
+    letter-spacing: .1rem;
+    margin-top: 2rem;
+}
+
+#thirdContentContainer {
+    padding: 100px;
 }

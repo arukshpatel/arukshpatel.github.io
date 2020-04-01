@@ -22,6 +22,15 @@
         crossorigin="anonymous"></script>
     <script src="./Script/script.js"></script>
     <script>
+
+        function events() {
+            document.addEventListener("scroll", function () {
+
+                if (window.pageYOffset > 3)
+                    document.getElementById('readMoreTxt').style.display = "block";
+            });
+        };
+
         function scrollDown() {
             window.scrollBy(0, 10); // horizontal and vertical scroll increments
             scrolldelay = setTimeout('scrollDown()', 10); // scrolls every 10 milliseconds
@@ -30,22 +39,21 @@
                 // scrolldelay = setTimeout('PageUp()', 2000);
             }
 
-            // document.getElementById('readMoreTxt').style.display = 'none';
-            // document.getElementById('readMoreTxt').style.display = 'none';
+            document.getElementById('readMoreTxt').style.display = 'none';
 
-        }
+        };
 
         function PageUp() {
             clearInterval(scrolldelay)
             window.scrollTo(0, 0);
             scrolldelay = setInterval('pageScroll()', 100);
-        }
+        };
     </script>
 </head>
 
-<body>
+<body onload="events()">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-lg sticky-top">
         <a class="navbar-brand mx-4" href="index.html" style="letter-spacing: .2rem;">ARUKSH PATEL</a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -112,7 +120,8 @@
                 </div>
             </div>
             <div class="readMore">
-                <a id="readMoreTxt" class="text-center" href="#" onclick="scrollDown()" style="color: black;letter-spacing: .5rem;">
+                <a id="readMoreTxt" class="text-center" href="#" onclick="scrollDown()"
+                    style="color: black;letter-spacing: .5rem;">
                     <p>Read More...</p>
                     <img class="icon" src="./Images/iconpack/down.png">
                 </a>
@@ -120,15 +129,54 @@
         </div>
     </div>
 
-    <div class="secondContent text-light text-center">
+    <div class="secondContent text-light text-center shadow-lg">
         <div id="secondContentContainer" class="container text-decoration-none">
-
+            <h3 class="text-left text-bold" style="word-spacing: 1.5rem; letter-spacing: .5rem;">MY WORK</h3>
+            <br>
+            <hr class="my-1 bg-light float-left" style="height: .5px; width: 75%;">
+            <br>
+            <p id="description" class="text-left font-weight-light">
+                You can say, academically, I am not the smartest cookie in the jar, but I'm a super curious guy. I spend
+                a lot of time building software and electronics, but there’s also a lot more to it. I'm currently
+                enrolled at University of Oklahoma as a Computer Science and Pre-Med student. Besides from coding and
+                learning new medical matrial, I really enjoy photography and videography alongside with editing the
+                material.
+            </p>
         </div>
     </div>
 
-    <div class="thirdContent bg-primary text-dark">
+    <div class="thirdContent bg-light text-dark shadow-lg">
         <div id="thirdContentContainer" class="container">
-            <h1 id="thirdHelloWorld">Hello World</h1>
+            <table class="table table-striped">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Language</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
         </div>
 
     </div>
