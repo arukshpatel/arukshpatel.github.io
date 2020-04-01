@@ -21,16 +21,10 @@ a {
 }
 
 .iconContainer {
-    margin-top: 50vh;
+    margin-top: 40vh;
     width: fit-content;
     border-top-right-radius: 17px;
     border-bottom-right-radius: 17px;
-}
-
-@media all and (max-width: 620px) {
-    .iconContainer {
-        display: none;
-    }
 }
 
 .navbar-items {
@@ -42,39 +36,52 @@ a {
 .mainContent {
     background-color: rgb(153, 66, 55);
     height: 100vh;
-    max-height: 100vh;
+    width: 100vw;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
 
+
 .p40vh {
     padding: 40vh;
 }
 
 #mainContentInfo {
-    position: fixed;
+    position: relative;
+    max-height: 5rem;
 }
 
-#readMoreInfo {
-    margin-top: -5vh;
-    position: fixed;
-    bottom: 0;
-    right: 50vw;
-    left: 50vw;
-    max-width: fit-content;
+#mainContentInfo h1{
+    font-weight: lighter;
+    font-size: 5rem;
+
 }
 
-/* @media all and (max-width: 900px) {
-    
-    #readMoreInfo {
+@media all and (max-width: 620px) {
+    .iconContainer {
         display: none;
     }
-} */
+    #mainContentInfo{
+
+        font-size: 1rem !important;
+    }
+}
+
+
+.readMore {
+    margin-top: 35vh;
+}
+
+#readMoreTxt {
+    text-decoration: none;
+
+}
 
 .secondContent {
-    height: 100vh;
+    background-color: rgb(36, 36, 36);
+    height: 50vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
