@@ -11,7 +11,7 @@ function git() {
             stringOut += "<td>" + responseObj[i].language + "</td>\n";
             stringOut += "</tr>"
         }
-        
+
         document.getElementById("gitTableBody").innerHTML = stringOut;
     }
     var request = new XMLHttpRequest();
@@ -45,6 +45,7 @@ function getCSV() {
     }
     var request = new XMLHttpRequest();
     request.onload = printSys;
-    request.open('get', 'https://arukshpatel.com/', true);
+    request.open('get', 'https://arukshpatel.com/res/file.csv', true);
+    // request.open('get', 'https://drive.google.com/file/d/19nZW9lckjP4iD5HNfXsy6kY6Yoet_2nJ/view?usp=sharing', true);
     request.send();
 }
