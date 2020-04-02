@@ -37,10 +37,10 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav navbar-items">
                 <li class="nav-item mx-3">
-                    <a class="nav-link active" href="project.html">Projects</a>
+                    <a class="nav-link" href="project.html">Projects</a>
                 </li>
                 <li class="nav-item mx-3">
-                    <a class="nav-link" href="contact.html">Contact</a>
+                    <a class="nav-link active" href="contact.html">Contact</a>
                 </li>
             </ul>
         </div>
@@ -80,23 +80,60 @@
         </div>
     </div>
 
-    <div class="thirdContent text-dark">
-        <div id="thirdContentContainer" class="container">
-            <table class="table table-striped shadow-lggi">
-                <thead class="thead-dark">
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Title</th>
-                        <th scope="col">Description</th>
-                        <th scope="col">Language</th>
-                    </tr>
-                </thead>
-                <tbody id="gitTableBody">
-                </tbody>
-            </table>
-        </div>
+    <section class="mb-4 container justify-content-center text-center">
+        <h2 class="h1-responsive font-weight-bold text-center my-4">Get in touch</h2>
+        <p class="text-center w-responsive mx-auto mb-5"><!-- text --></p>
 
-    </div>
+        <div class="row">
+            <div class="col">
+                <form id="contact-form" name="contact-form" action="mailto:arukshpatel98@gmail.com" method="POST">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <input type="text" id="name" name="name" class="form-control">
+                                <label for="name" class="">Your name</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <input type="text" id="email" name="email" class="form-control">
+                                <label for="email" class="">Your email</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="md-form mb-0">
+                                <input type="text" id="subject" name="subject" class="form-control">
+                                <label for="subject" class="">Subject</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-md-12">
+
+                            <div class="md-form">
+                                <textarea type="text" id="message" name="message" rows="2"
+                                    class="form-control md-textarea"></textarea>
+                                <label for="message">Your message</label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <input type="submit" class="btn btn-success" value="Send">
+                        </div>
+                        <div class="col">
+                            <input type="reset" class="btn btn-danger" value="Reset">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
