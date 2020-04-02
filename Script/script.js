@@ -36,16 +36,3 @@ function PageUp() {
     window.scrollTo(0, 0);
     scrolldelay = setInterval('pageScroll()', 100);
 };
-
-function getCSV() {
-    function printSys() {
-        var responseIn = this.responseText;
-
-        console.log(responseIn);
-    }
-    var request = new XMLHttpRequest();
-    request.onload = printSys;
-    request.open('get', 'https://arukshpatel.com/res/file.csv', true);
-    // request.open('get', 'https://drive.google.com/file/d/19nZW9lckjP4iD5HNfXsy6kY6Yoet_2nJ/view?usp=sharing', true);
-    request.send();
-}
