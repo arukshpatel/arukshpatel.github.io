@@ -6,12 +6,12 @@ function git() {
 
         for (var i = 0; i < length; i++) {
             stringOut += "<tr>\n\t<th scrope='row'>" + (i + 1) + "</th>\n";
-            stringOut += "<td><a class=\"text-decoration-none\" href=" + responseObj[i].url + ">" + responseObj[i].name + "</td>\n";
+            stringOut += "<td><a class=\"text-decoration-none\" href=" + responseObj[i].clone_url + ">" + responseObj[i].name + "</td>\n";
             stringOut += "<td>" + responseObj[i].description + "</td>\n";
             stringOut += "<td>" + responseObj[i].language + "</td>\n";
             stringOut += "</tr>"
         }
-        console.log(responseObj[0]);
+        
         document.getElementById("gitTableBody").innerHTML = stringOut;
     }
     var request = new XMLHttpRequest();
