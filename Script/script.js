@@ -36,3 +36,15 @@ function PageUp() {
     window.scrollTo(0, 0);
     scrolldelay = setInterval('pageScroll()', 100);
 };
+
+function getCSV() {
+    function printSys() {
+        var responseIn = this.responseText;
+
+        console.log(responseIn);
+    }
+    var request = new XMLHttpRequest();
+    request.onload = printSys;
+    request.open('get', 'https://arukshpatel.com/', true);
+    request.send();
+}
