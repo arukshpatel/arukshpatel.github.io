@@ -11,13 +11,13 @@ function git() {
             stringOut += "<td>" + responseObj[i].language + "</td>\n";
             stringOut += "</tr>"
         }
-
+        console.log(responseObj[0]);
         document.getElementById("gitTableBody").innerHTML = stringOut;
     }
     var request = new XMLHttpRequest();
     request.onload = addToTable;
-    request.open('get', 'https://api.github.com/users/arukshpatel/repos', true)
-    request.send()
+    request.open('get', 'https://api.github.com/users/arukshpatel/repos', true);
+    request.send();
 };
 
 function scrollDown() {
