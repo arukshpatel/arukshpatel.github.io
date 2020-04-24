@@ -28,8 +28,6 @@ function scrollDown() {
         clearTimeout(scrolldelay);
         // scrolldelay = setTimeout('PageUp()', 2000);
     }
-
-    document.getElementById('readMoreTxt').style.display = 'none';
 };
 
 function PageUp() {
