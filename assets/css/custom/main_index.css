@@ -157,3 +157,7 @@ a {
 #thirdContentContainer {
     padding: 100px;
 }
+
+h1 {
+    font-size: calc(5vw + 10px) !important;
+}
