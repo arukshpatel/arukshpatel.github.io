@@ -9,10 +9,9 @@
     > [Dracula color palette](https://draculatheme.com/contribute/)
 - [ ] Website constraints and parameters
     > Single page design with all elements/content of the page replaced through Javascript
-    >> If javascript is **not** enabled, the page should automatically redirect to Portfolio v1
-
 - [ ] Content
     - [ ] Website init:
+        - If javascript is **not** enabled, the page should automatically redirect to Portfolio v1
         - Shows a custom loading animation.
             - While loading, the JS should obtaint the user's location to display the custom animation for the background.
             - Location obtained either through reverse searching user's IP address or simply obtaining the user's ip address.
