@@ -31,25 +31,11 @@
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/mobile_main.css">
     <script type="text/javascript" src="./assets/js/script.js"></script>
-    <script>
-        document.onreadystatechange = function() {
-            console.log("State: " + document.readyState)
-            if(document.readyState !== "complete")
-            {
-                document.querySelector("body").style.visibility = "hidden";
-            } else {
-                document.querySelector("body").style.visibility = "visible";
-            }
-        }
-    </script>
-    <script>
-        console.log("Meta Tag:")
-    </script>
-    <meta onload="init()">
 </head>
 
 <body>
-    <h1 class="mx-auto" style="width: fit-content;">Aruksh Patel</h1>
+    <div id="body">
+    </div>
 </body>
 
 </html>
