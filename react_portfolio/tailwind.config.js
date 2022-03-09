@@ -2,13 +2,16 @@ module.exports = {
   mode: 'jit',
   purge: [
       './public/**/*.html',
-      './src/**/*.{js,jsx,ts,tsx,vue}',
+      './src/**/*.{js,jsx,ts,tsx}',
   ],
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
-  darkMode: 'media',
   theme: {
+    colors: {},
+    fontFamily: {
+      sans: ['Nunito', 'sans-serif'],
+    },
     extend: {},
   },
   plugins: [],
