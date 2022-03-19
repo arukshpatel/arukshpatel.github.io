@@ -1,22 +1,19 @@
-import React from "react";
+import React    from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import App from "./Components/Example/App";
-import Main from "./Components/Body/Main";
-import reportWebVitals from "./reportWebVitals";
-import Header from "./Components/Header/Header";
-import { Navbar } from "./Components/Navbar/Navbar";
+import Navbar from "./Components/Navbar/Navbar";
+import Intro  from "./Components/Intro/Intro";
 
-// @ts-ignore
 ReactDOM.render(
-	<React.StrictMode>
-		<Header />
-		<Navbar />
-	</React.StrictMode>,
-	document.getElementById("body")
+		<React.Fragment>
+			<Navbar/>
+		</React.Fragment>,
+	document.getElementById("nav")
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+ReactDOM.render(
+	<React.Fragment>
+		<Intro/>
+	</React.Fragment>,
+	document.getElementById('content')
+);
