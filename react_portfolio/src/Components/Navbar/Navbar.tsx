@@ -5,6 +5,14 @@ import {ReactComponent as TwoBarMenu} from '../../assets/icons/2barMenu.svg';
 import {ReactComponent as CloseMenu}  from '../../assets/icons/Close.svg';
 
 import MenuItems                         from "./Components/MenuItems";
+import {
+    RiFacebookLine,
+    RiGithubLine,
+    RiInstagramLine,
+    RiLinkedinLine,
+    RiSnapchatLine, RiSpotifyLine,
+    RiTwitterLine
+}                                        from "react-icons/ri";
 
 
 export default function Navbar() {
@@ -53,6 +61,33 @@ export default function Navbar() {
 
                 </Transition>
 
+            </div>
+
+            <div className={'invisible bg-white rounded-r-lg drop-shadow-lg sm:fixed sm:visible absolute flex' +
+                ' bottom-0' +
+                ' flex-col' +
+                ' md:bottom-[35%]' +
+                ' left-0' +
+                ' px-4 py-4' +
+                ' text-xl' +
+                ' lg:text-2xl'}>
+
+                <RiGithubLine className={'m-1 lg:m-2 lg:hover:text-4xl hover:text-2xl ease-in duration-150' +
+                    ' hover:text-[#171515]'}/>
+                <RiLinkedinLine className={'m-1 lg:m-2 lg:hover:text-4xl hover:text-2xl ease-in-out duration-150' +
+                    ' hover:text-[#0077B5]'}/>
+                <span className={'m-2 lg:m-4'}/>
+                <RiFacebookLine className={'m-1 lg:m-2 lg:hover:text-4xl hover:text-2xl ease-in-out duration-150' +
+                    ' hover:text-[#4267B2]'}/>
+                <RiInstagramLine className={'m-1 lg:m-2 lg:hover:text-4xl hover:text-2xl ease-in-out duration-150' +
+                    ' hover:text-[#C13584]'}/>
+                <RiSnapchatLine className={'m-1 lg:m-2 lg:hover:text-4xl hover:text-2xl  ease-in-out duration-150' +
+                    ' hover:text-[#FFFC00]'}/>
+                <RiTwitterLine className={'m-1 lg:m-2 lg:hover:text-4xl hover:text-2xl ease-in-out duration-150' +
+                    ' hover:text-[#1DA1F2]'}/>
+                <span className={'m-2 lg:m-4'}/>
+                <RiSpotifyLine className={'m-1 lg:m-2 lg:hover:text-4xl hover:text-2xl ease-in-out duration-150' +
+                    ' hover:text-[#1DB954]'}/>
             </div>
         </nav>
 
