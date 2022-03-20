@@ -4,7 +4,7 @@ export default function AboutMe()
 {
     return (
         <div className={'h-screen w-screen bg-[#44475a]'}>
-            <h1>Hi</h1>
+            <h1>ABOUT ME SECTION</h1>
         </div>
     );
 }
