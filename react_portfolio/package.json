@@ -9,7 +9,6 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "@typescript-eslint/no-unused-vars" : "off",
     "extends": [
       "react-app",
       "react-app/jest"
