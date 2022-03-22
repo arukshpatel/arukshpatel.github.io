@@ -22,7 +22,7 @@ interface SocialItemReq {
 function SocialItemEl(req: SocialItemReq) {
     return (
         <li
-            className={`w-full py-1 px-2 flex flex-col my-0.5 ml-[-75%] hover:ml-[0%] group duration-300 rounded bg-gray-100 ${req.elementBackgroundClassNames}`}
+            className={`w-full py-1 px-2 flex flex-col my-1 ml-[-75%] hover:ml-[0%] group duration-300 rounded-r-lg hover:rounded-r-full bg-white bg-gray-200 hover:bg-white hover:drop-shadow-2xl drop-shadow-xl `}
         >
             <div className={`${req.textBackgroundClassNames}`}>
                 <a className={`socialItemLinkElement`} href={req.link} target={'_blank'} rel={'noreferrer'}>
@@ -36,28 +36,28 @@ function SocialItemEl(req: SocialItemReq) {
 
 export default function SocialItemsList() {
     return (
-        <div className={'invisible sm:visible fixed flex flex-col top-[20%] left-0'}>
+        <div className={' invisible sm:visible fixed flex flex-col top-[20%] left-0'}>
             <ul>
                 <SocialItemEl
                     name={'Github'}
                     icon={<RiGithubLine />}
-                    toIconCol={'text-github group-hover:text-white'}
+                    toIconCol={'text-github '}
                     link={'https://www.github.com/arukshpatel'}
-                    elementBackgroundClassNames={'hover:bg-gradient-to-l from-github focus:bg-red-500'}
+                    elementBackgroundClassNames={'hover:bg-gradient-to-l from-github to-white focus:bg-red-500'}
                     textBackgroundClassNames={'bg-gradient-to-r from-github bg-clip-text'}
                 />
                 <SocialItemEl
                     name={'LinkedIn'}
                     icon={<RiLinkedinLine />}
-                    toIconCol={'text-linkedIn group-hover:text-white'}
+                    toIconCol={'text-linkedIn '}
                     link={'https://www.github.com/arukshpatel'}
-                    elementBackgroundClassNames={'hover:bg-gradient-to-l from-linkedIn'}
+                    elementBackgroundClassNames={'hover:bg-gradient-to-l from-linkedIn to-white'}
                     textBackgroundClassNames={'bg-gradient-to-r from-linkedIn bg-clip-text'}
                 />
                 <SocialItemEl
                     name={'E-Mail'}
                     icon={<RiMailSendLine />}
-                    toIconCol={'text-mail group-hover:text-white'}
+                    toIconCol={'text-mail '}
                     link={'https://www.github.com/arukshpatel'}
                     elementBackgroundClassNames={'hover:bg-gradient-to-l from-mail'}
                     textBackgroundClassNames={'bg-gradient-to-r from-mail bg-clip-text'}
@@ -68,7 +68,7 @@ export default function SocialItemsList() {
                 <SocialItemEl
                     name={'Facebook'}
                     icon={<RiFacebookLine />}
-                    toIconCol={'text-facebook group-hover:text-white'}
+                    toIconCol={'text-facebook '}
                     link={'https://facebook.com/aruk5h/'}
                     elementBackgroundClassNames={'hover:bg-gradient-to-l from-facebook'}
                     textBackgroundClassNames={'bg-gradient-to-r from-facebook bg-clip-text'}
@@ -76,7 +76,7 @@ export default function SocialItemsList() {
                 <SocialItemEl
                     name={'Instagram'}
                     icon={<RiInstagramLine />}
-                    toIconCol={'text-instagram group-hover:text-white'}
+                    toIconCol={'text-instagram '}
                     link={'https://instagram.com/aruk5h/'}
                     elementBackgroundClassNames={'hover:bg-gradient-to-l from-instagram'}
                     textBackgroundClassNames={'bg-gradient-to-r from-instagram bg-clip-text'}
@@ -84,15 +84,15 @@ export default function SocialItemsList() {
                 <SocialItemEl
                     name={'Snapchat'}
                     icon={<RiSnapchatLine />}
-                    toIconCol={'text-snapchat group-hover:text-white'}
+                    toIconCol={'text-snapchat '}
                     link={'https://snapchat.com/aruk5h/'}
                     elementBackgroundClassNames={'hover:bg-gradient-to-l from-snapchat'}
-                    textBackgroundClassNames={'bg-gradient-to-r from-black to-snapchat bg-clip-text'}
+                    textBackgroundClassNames={'bg-gradient-to-r from-black bg-clip-text'}
                 />
                 <SocialItemEl
                     name={'Twitter'}
                     icon={<RiTwitterLine />}
-                    toIconCol={'text-twitter group-hover:text-white'}
+                    toIconCol={'text-twitter '}
                     link={'https://twitter.com/aruk5h/'}
                     elementBackgroundClassNames={'hover:bg-gradient-to-l from-twitter'}
                     textBackgroundClassNames={'bg-gradient-to-r from-twitter bg-clip-text'}
@@ -103,7 +103,7 @@ export default function SocialItemsList() {
                 <SocialItemEl
                     name={'Spotify'}
                     icon={<RiSpotifyLine />}
-                    toIconCol={'text-spotify group-hover:text-white'}
+                    toIconCol={'text-spotify '}
                     link={'https://spotify.com/aruk5h/'}
                     elementBackgroundClassNames={'hover:bg-gradient-to-l from-spotify'}
                     textBackgroundClassNames={'bg-gradient-to-r from-spotify bg-clip-text'}

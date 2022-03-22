@@ -26,8 +26,6 @@ body {
 
 .socialItemLinkElement {
     @apply justify-between
-
-    place-items-start
     text-xl lg:text-2xl
     duration-300
     space-x-2
@@ -37,6 +35,7 @@ body {
 .socialItemName {
     @apply
     group-hover:text-transparent
+    font-semibold
 }
 
 .socialItemIcon {
