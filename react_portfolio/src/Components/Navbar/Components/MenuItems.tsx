@@ -1,49 +1,50 @@
-import React, { useState } from "react";
+import React, { useState } from 'react'
 
-function NonCollapsedList()
-{
+function NonCollapsedList() {
     return (
-        <ul className={'hidden lg:flex lg:text-lg gap-x-3 divide-x text-center'}>
-            <li className={'navbar-Button ease-in-out duration-150 hover:underline hover:decoration-blue-500' +
-                ' text-blue-500'}>
-                <a href={"#"}>Resume  📃</a>
+        <ul className={'hidden lg:flex lg:text-lg place-items-center text-center gap-x-3'}>
+            <li className={'navbar-Button ease-in-out duration-150 text-blue-500'} id={'ResumeButton'}>
+                <a href={'#'}>Resume 📃</a>
             </li>
-            <li className={'navbar-Button ease-in-out duration-150 hover:underline hover:decoration-gray-500' +
-                ' text-gray-500'}>
-                <a href={"#"}>Projects  💾</a>
+            <li className={'navbar-Button ease-in-out duration-150 text-gray-700 '} id={'ProjectButton'}>
+                <a href={'#'}>Projects 💾</a>
             </li>
-            <li className={'navbar-Button ease-in-out duration-150 border-2 rounded-xl bg-teal-500 drop-shadow-lg' +
-                ' hover:drop-shadow-2xl' +
-                ' hover:text-white'}>
-                <a href={"#"}>Hire Me  👨‍💻</a>
+            <li
+                className={
+                    'navbar-Button ease-in-out duration-150 rounded-xl' +
+                    ' drop-shadow-2xl' +
+                    ' hover:decoration-white hover:drop-shadow-2xl' +
+                    ' hover:text-white'
+                }
+                id={'HireMeButton'}
+            >
+                <a href={'#'}>Hire Me </a>👨‍💻
             </li>
         </ul>
-    );
+    )
 }
-function CollapsedList()
-{
+
+function CollapsedList() {
     return (
-        <ul className={'rounded-2xl lg:hidden absolute w-full bg-white'}>
-            <li className={'navbar-Button-side border-b-neutral-500 border-b-2'}>
-                <a href={"#"}>Home 🏠</a>
+        <ul className={'lg:hidden w-full my-2  space-y-1'}>
+            <li className={'navbar-Button-side'}>
+                <a href={'#'}>Home 🏠</a>
             </li>
-            <li className={'navbar-Button-side border-b-blue-500 border-b-2'}>
-                <a href={"#"}>Resume 📃</a>
+            <li className={'navbar-Button-side'}>
+                <a href={'#'}>Resume 📃</a>
             </li>
-            <li className={'navbar-Button-side border-b-gray-500 border-b-2'}>
-                <a href={"#"}>Projects 💾</a>
+            <li className={'navbar-Button-side'}>
+                <a href={'#'}>Projects 💾</a>
             </li>
-            <li className={'navbar-Button-side border-b-teal-500 border-b-2'}>
-                <a href={"#"}>Hire Me 👨‍💻</a>
+            <li className={'navbar-Button-side'}>
+                <a href={'#'}>Hire Me 👨‍💻</a>
             </li>
         </ul>
-    );
+    )
 }
-export default function MenuItems(props: { collapsed: boolean; })
-{
 
-    if(props.collapsed)
-        return CollapsedList();
+export default function MenuItems(props: { collapsed: boolean }) {
+    if (props.collapsed) return <div className={'absolute w-full h-screen  bg-red/[.90]'}>{CollapsedList()}</div>
 
-    return NonCollapsedList();
+    return NonCollapsedList()
 }

@@ -1,10 +1,16 @@
-import React from "react";
+import React from 'react'
 
-export default function AboutMe()
-{
+export default function AboutMe() {
     return (
-        <div className={'h-screen w-screen bg-[#44475a]'}>
-            <h1>ABOUT ME SECTION</h1>
+        <div id={'AboutMe'} className={'w-screen h-screen bg-slate-800 text-center mx-auto'}>
+            <div className={'bg-gray-300 max-w-[1080px] mx-auto flex flex-col md:flex-row'}>
+                <div>
+                    <img src={'../../public/assets/favicon.png'} alt={'Profile '} />
+                </div>
+                <div>
+                    <p></p>
+                </div>
+            </div>
         </div>
-    );
+    )
 }
