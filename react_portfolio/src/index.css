@@ -8,20 +8,36 @@ body {
     @apply font-nunito;
 }
 
+#ResumeButton {
+    @apply bg-white/[0.1] hover:bg-white/[0.5];
+}
+
+#ProjectButton {
+    @apply bg-white/[0.05] hover:bg-white;
+}
+
+#HireMeButton {
+    @apply bg-teal-500/[0.2] hover:bg-teal-500;
+}
+
 .navbar-Button {
-    @apply px-7 py-3 pl-3 text-xl font-nunito font-semibold hover:text-2xl;
+    @apply backdrop-blur-sm rounded-lg px-7 py-3 pl-3 text-xl font-nunito font-semibold place-items-center;
 }
 
 .navbar-Button-side {
-    @apply px-14 py-5 text-lg w-full text-left font-semibold font-nunito hover:text-xl rounded-b-2xl ease-in-out duration-150;
+    @apply px-14 py-5 text-lg w-full text-left font-semibold font-nunito hover:text-xl
+    rounded-xl ease-in-out duration-150 hover:bg-gray-400/[.75] bg-white backdrop-blur-lg
+
+
 }
 
 .navbar-brand {
-    @apply font-bold font-serif text-3xl mx-5 lg:text-4xl text-center;
+    @apply font-bold font-serif text-3xl mx-5 lg:text-4xl text-center bg-gradient-to-r from-rose-500 to-purple-400 bg-clip-text drop-shadow-lg text-transparent;
 }
 
 .navbar-menuButton {
-    @apply lg:hidden border rounded-lg border-gray-400 mx-5;
+    @apply lg:hidden p-1 rounded-full border-transparent mx-5 bg-gradient-to-r from-rose-500 to-purple-400 bg-clip-content
+    duration-150
 }
 
 .socialItemLinkElement {
@@ -30,17 +46,16 @@ body {
     duration-300
     space-x-2
     flex
+
 }
 
 .socialItemName {
-    @apply
-    group-hover:text-transparent
-    font-semibold
+    @apply text-white
+    font-semibold;
 }
 
 .socialItemIcon {
-    @apply left-0 my-auto
-
+    @apply left-0 my-auto;
 }
 
 .introHeading {
@@ -52,5 +67,5 @@ body {
 }
 
 .about-me {
-    @apply text-center flex flex-col absolute bottom-0 inset-x-0 text-xl animate-bounce items-center z-10;
+    @apply text-center flex flex-col absolute bottom-0 inset-x-0 text-xl items-center;
 }

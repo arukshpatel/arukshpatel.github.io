@@ -13,8 +13,8 @@ export default function Intro() {
                         Self-learning software engineering through research & development.
                     </p>
                 </div>
-                <div className={'my-5 place-content-center'}>
-                    <button className={'border-blue-500 text-blue-700 hover:bg-blue-500' + ' introHeading-Button'}>
+                <div className={'invisible sm:visible my-5 place-content-center'}>
+                    <button className={'border-blue-500 text-blue-700 hover:bg-blue-500 introHeading-Button'}>
                         Resume
                     </button>
                     <button className={'border-gray-500 text-gray-700 hover:bg-gray-500 introHeading-Button'}>
@@ -27,15 +27,17 @@ export default function Intro() {
             </div>
             <div
                 className={
-                    'text-center flex flex-col absolute bottom-0 inset-x-0 text-base lg:text-xl' +
-                    ' items-center z-10 text-gray-500 hover:text-black'
+                    'text-center flex flex-col inset-x-0 text-base lg:text-xl' +
+                    ' place-items-center text-gray-500 hover:text-black'
                 }
             >
-                <a href={'./#AboutMe'}>
-                    <span className={'mb-2'}>About Me</span>
-                </a>
-                <div className={'animate-bounce w-4 lg:w-7'}>
-                    <DoubleDownArrow />
+                <div className={'hover:snap-y absolute place-items-center bottom-0'}>
+                    <a href={'./#AboutMe'}>
+                        <span className={'mb-2'}>About Me</span>
+                    </a>
+                    <div className={'mx-auto animate-bounce w-4 lg:w-7'}>
+                        <DoubleDownArrow />
+                    </div>
                 </div>
             </div>
         </div>
