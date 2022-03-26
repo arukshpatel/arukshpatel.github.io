@@ -4,24 +4,29 @@
 @tailwind components;
 @tailwind utilities;
 
+
 body {
     @apply font-nunito;
 }
 
 #ResumeButton {
-    @apply bg-white/[0.1] hover:bg-white/[0.5];
+    @apply bg-transparent hover:bg-white/[0.5];
 }
 
 #ProjectButton {
-    @apply bg-white/[0.05] hover:bg-white;
+    @apply bg-white/[0.0] hover:bg-white/[0.5];
 }
 
 #HireMeButton {
     @apply bg-teal-500/[0.2] hover:bg-teal-500;
 }
 
+.temporary-bounce {
+    animation-iteration-count: 5;
+}
+
 .navbar-Button {
-    @apply backdrop-blur-sm rounded-lg px-7 py-3 pl-3 text-xl font-nunito font-semibold place-items-center;
+    @apply hover:backdrop-blur-sm rounded-lg px-7 py-3 pl-3 text-xl font-nunito font-semibold place-items-center;
 }
 
 .navbar-Button-side {
@@ -36,8 +41,8 @@ body {
 }
 
 .navbar-menuButton {
-    @apply lg:hidden p-1 rounded-full border-transparent mx-5 bg-gradient-to-r from-rose-500 to-purple-400 bg-clip-content
-    duration-150
+    @apply lg:hidden  rounded-full border-transparent mx-5 bg-gradient-to-r from-rose-500 to-purple-400 bg-clip-content
+    duration-300
 }
 
 .socialItemLinkElement {
@@ -59,12 +64,21 @@ body {
 }
 
 .introHeading {
-    @apply text-2xl lg:text-3xl font-mono font-bold;
+    @apply text-2xl lg:text-3xl font-mono font-bold ease-in-out duration-1000
+    w-full grid grid-cols-2 grid-rows-none justify-start sm:text-center px-5 sm:px-0
 }
 
 .introHeading-Button {
-    @apply mx-0.5 md:mx-5 sm:px-7 sm:py-3 lg:mx-10 px-5 py-2 border-2 rounded-lg ease-in-out duration-200 hover:text-white hover:text-lg lg:text-lg text-sm;
+    @apply mx-0.5 md:mx-5 sm:px-7 sm:py-3 lg:mx-10 px-5 py-2 border-2 rounded-lg ease-in-out duration-300
+    hover:text-white hover:text-lg lg:text-lg text-sm hidden sm:block
 }
+
+.MyWorkButton {
+    @apply block sm:hidden flex flex-row place-items-center space-x-2 rounded-lg hover:text-white
+    bg-gradient-to-l from-rose-500 to-purple-400 bg-clip-text text-transparent hover:bg-clip-border duration-300 ease-in-out
+
+}
+
 
 .about-me {
     @apply text-center flex flex-col absolute bottom-0 inset-x-0 text-xl items-center;

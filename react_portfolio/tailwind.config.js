@@ -20,18 +20,32 @@ module.exports = {
       },
       keyframes: {
         wave: {
-          '0%': { transform: 'rotate(0.0deg)' },
-          '15%': { transform: 'rotate(14.0deg)' },
-          '30%': { transform: 'rotate(-8.0deg)' },
-          '40%': { transform: 'rotate(14.0deg)' },
-          '50%': { transform: 'rotate(-4.0deg)' },
-          '60%': { transform: 'rotate( 10.0deg)' },
-          '70%': { transform: 'rotate(0.0deg)' },
-          '100%': { transform: 'rotate(0.0deg)' },
+          '0%': { transform: 'rotate(0.0deg), translateX(0)' },
+          '15%': { transform: 'rotate(10.0deg) translateX(25%)' },
+          '30%': { transform: 'rotate(-4.0deg) translateX(-13%)' },
+          '40%': { transform: 'rotate(10.0deg) translateX(25%)' },
+          '50%': { transform: 'rotate(-4.0deg) translateX(-7%)' },
+          '60%': { transform: 'rotate( 10.0deg) translateX(20%)' },
+          '80%': { transform: 'rotate(-4.0deg) translateX(-7%)' },
+          '100%': { transform: 'rotate(0.0deg) translateX(0)' },
+        },
+        bounceRight: {
+          '0%': { transform: 'translateX(25%)' },
+          '50%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(25%)' },
+        },
+        fadeOut: {
+          from: {
+            opacity: 1,
+          },
+          to: {
+            opacity: 0,
+          },
         },
       },
       animation: {
-        wave: 'wave 1.5s infinite',
+        wave: 'wave 2.0s infinite',
+        bounceRight: 'bounceRight 1.5s infinite',
       },
     },
   },

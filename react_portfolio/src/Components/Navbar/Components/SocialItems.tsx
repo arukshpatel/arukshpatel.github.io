@@ -27,7 +27,7 @@ function SocialItemEl(req: SocialItemReq) {
                 'w-full py-1 px-2 flex flex-col ' +
                 'ml-[-75%] hover:ml-[0%] group duration-300 rounded-r-2xl ' +
                 'bg-white/10 duration-300 ease-in-out' +
-                'hover:drop-shadow-2xl drop-shadow-xl backdrop-blur-sm ' +
+                'hover:drop-shadow-2xl drop-shadow-xl backdrop-blur-xl ' +
                 req.elementBackgroundClassNames
             }
         >
@@ -45,7 +45,7 @@ function topDiff(height: number) {
     return height < 300 ? 'sm:invisible' : height < 500 ? 'bottom-0' : 'top-1/3'
 }
 
-export default function SocialItemsList() {
+export default function SocialItemsList(params: { flexCol?: string; flexRow?: string }) {
     const [windowHeight, setWindowHeight] = useState(window.innerHeight)
 
     React.useEffect(() => {
@@ -57,7 +57,7 @@ export default function SocialItemsList() {
     })
 
     return (
-        <div className={' invisible sm:visible fixed flex flex-col left-0 ' + topDiff(windowHeight)}>
+        <div className={'z-50 invisible sm:visible fixed flex flex-col left-0 ' + topDiff(windowHeight)}>
             <ul className={'space-y-1'}>
                 <SocialItemEl
                     name={'Github'}
@@ -65,7 +65,7 @@ export default function SocialItemsList() {
                     toIconCol={'text-linkedin'}
                     link={'https://www.github.com/arukshpatel'}
                     elementBackgroundClassNames={
-                        'hover:bg-gradient-to-r bg-gradient-to-l from-github/[0.5] to-transparent'
+                        'hover:bg-gradient-to-r bg-gradient-to-l from-github/[0.4] to-transparent'
                     }
                     // textBackgroundClassNames={'bg-gradient-to-r from-white to-github bg-clip-text'}
                 />
@@ -75,7 +75,7 @@ export default function SocialItemsList() {
                     toIconCol={'text-linkedIn '}
                     link={'https://www.github.com/arukshpatel'}
                     elementBackgroundClassNames={
-                        'hover:bg-gradient-to-r bg-gradient-to-l from-linkedIn/[0.5] to-transparent'
+                        'hover:bg-gradient-to-r bg-gradient-to-l from-linkedIn/[0.4] to-transparent'
                     }
                     // textBackgroundClassNames={'bg-gradient-to-r from-white to-linkedIn bg-clip-text'}
                 />
@@ -85,7 +85,7 @@ export default function SocialItemsList() {
                     toIconCol={'text-mail '}
                     link={'https://www.github.com/arukshpatel'}
                     elementBackgroundClassNames={
-                        'hover:bg-gradient-to-r bg-gradient-to-l from-mail/[0.5] to-transparent'
+                        'hover:bg-gradient-to-r bg-gradient-to-l from-mail/[0.4] to-transparent'
                     }
                     // textBackgroundClassNames={'bg-gradient-to-r from-mail bg-clip-text'}
                 />
@@ -98,7 +98,7 @@ export default function SocialItemsList() {
                     toIconCol={'text-facebook '}
                     link={'https://facebook.com/aruk5h/'}
                     elementBackgroundClassNames={
-                        'hover:bg-gradient-to-r bg-gradient-to-l from-facebook/[0.5] to-transparent'
+                        'hover:bg-gradient-to-r bg-gradient-to-l from-facebook/[0.4] to-transparent'
                     }
                     // textBackgroundClassNames={'bg-gradient-to-r from-facebook bg-clip-text'}
                 />
@@ -108,7 +108,7 @@ export default function SocialItemsList() {
                     toIconCol={'text-instagram '}
                     link={'https://instagram.com/aruk5h/'}
                     elementBackgroundClassNames={
-                        'hover:bg-gradient-to-r bg-gradient-to-l from-instagram/[0.5] to-transparent '
+                        'hover:bg-gradient-to-r bg-gradient-to-l from-instagram/[0.4] to-transparent '
                     }
                     // textBackgroundClassNames={'bg-gradient-to-r from-instagram bg-clip-text'}
                 />
@@ -116,9 +116,9 @@ export default function SocialItemsList() {
                     name={'Snapchat'}
                     icon={<RiSnapchatLine />}
                     toIconCol={'text-snapchat group-hover:text-black '}
-                    link={'https://snapchat.com/aruk5h/'}
+                    link={'https://snapchat.com/add/aruk5h/'}
                     elementBackgroundClassNames={
-                        'hover:bg-gradient-to-r bg-gradient-to-l from-black/[0.5] to-transparent'
+                        'hover:bg-gradient-to-r bg-gradient-to-l from-black/[0.4] to-transparent'
                     }
                     // textBackgroundClassNames={'bg-gradient-to-r from-black bg-clip-text'}
                 />
@@ -128,7 +128,7 @@ export default function SocialItemsList() {
                     toIconCol={'text-twitter '}
                     link={'https://twitter.com/aruk5h/'}
                     elementBackgroundClassNames={
-                        'hover:bg-gradient-to-r bg-gradient-to-l from-twitter/[0.5] to-transparent'
+                        'hover:bg-gradient-to-r bg-gradient-to-l from-twitter/[0.4] to-transparent'
                     }
                     // textBackgroundClassNames={'bg-gradient-to-r from-twitter bg-clip-text'}
                 />
@@ -139,9 +139,9 @@ export default function SocialItemsList() {
                     name={'Spotify'}
                     icon={<RiSpotifyLine />}
                     toIconCol={'text-spotify '}
-                    link={'https://spotify.com/aruk5h/'}
+                    link={'https://open.spotify.com/user/aruk5h'}
                     elementBackgroundClassNames={
-                        'hover:bg-gradient-to-r bg-gradient-to-l from-spotify/[0.5] to-transparent'
+                        'hover:bg-gradient-to-r bg-gradient-to-l from-spotify/[0.4] to-transparent'
                     }
                     // textBackgroundClassNames={'bg-gradient-to-r from-spotify bg-clip-text'}
                 />

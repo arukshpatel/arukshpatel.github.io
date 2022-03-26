@@ -3,10 +3,16 @@ import React, { useState } from 'react'
 function NonCollapsedList() {
     return (
         <ul className={'hidden lg:flex lg:text-lg place-items-center text-center gap-x-3'}>
-            <li className={'navbar-Button ease-in-out duration-150 text-blue-500'} id={'ResumeButton'}>
+            <li
+                className={'navbar-Button ease-in-out duration-150 text-[#559CC8] hover:text-sky-600'}
+                id={'ResumeButton'}
+            >
                 <a href={'#'}>Resume 📃</a>
             </li>
-            <li className={'navbar-Button ease-in-out duration-150 text-gray-700 '} id={'ProjectButton'}>
+            <li
+                className={'navbar-Button ease-in-out duration-150 hover:text-sky-600 text-[#559CC8]'}
+                id={'ProjectButton'}
+            >
                 <a href={'#'}>Projects 💾</a>
             </li>
             <li
