@@ -18,7 +18,7 @@ function NonCollapsedList() {
             <li
                 className={
                     'navbar-Button ease-in-out duration-150 rounded-xl' +
-                    ' drop-shadow-2xl' +
+                    ' drop-shadow-lg' +
                     ' hover:decoration-white hover:drop-shadow-2xl' +
                     ' hover:text-white'
                 }
@@ -50,7 +50,7 @@ function CollapsedList() {
 }
 
 export default function MenuItems(props: { collapsed: boolean }) {
-    if (props.collapsed) return <div className={'absolute w-full h-screen  bg-red/[.90]'}>{CollapsedList()}</div>
+    if(props.collapsed) return <div className={'absolute w-full h-screen  bg-red/[.90]'}>{CollapsedList()}</div>
 
     return NonCollapsedList()
 }

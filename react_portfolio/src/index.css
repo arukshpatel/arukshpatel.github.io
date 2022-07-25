@@ -9,6 +9,7 @@ body {
     @apply font-nunito;
 }
 
+
 #ResumeButton {
     @apply bg-transparent hover:bg-white/[0.5];
 }
@@ -32,8 +33,6 @@ body {
 .navbar-Button-side {
     @apply px-14 py-5 text-lg w-full text-left font-semibold font-nunito hover:text-xl
     rounded-xl ease-in-out duration-150 hover:bg-gray-400/[.75] bg-white backdrop-blur-lg
-
-
 }
 
 .navbar-brand {
@@ -82,4 +81,8 @@ body {
 
 .about-me {
     @apply text-center flex flex-col absolute bottom-0 inset-x-0 text-xl items-center;
+}
+
+.typewrite {
+    @apply border-r-4 border-r-green-700 text-center
 }

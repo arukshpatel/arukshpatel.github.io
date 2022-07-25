@@ -1,20 +1,22 @@
-import { FaArrowRight } from 'react-icons/fa'
+import { FaArrowRight }               from 'react-icons/fa'
 import { HiOutlineChevronDoubleDown } from 'react-icons/hi'
-import React from 'react'
+import React                          from 'react'
+import './intro.css';
 
 export default function Intro() {
     return (
-        <div className={'mx-auto w-screen h-screen max-w-[1080px]'}>
-            <div className={'container h-fit py-[35vh]'}>
+        <div className={'mx-auto w-screen h-screen max-w-[1080px] -z-50'}>
+            <div className={'container h-fit py-[35vh] backdrop-blur-md'}>
                 <div className={'introHeading group'}>
-                    <h2>HELLO!!!</h2>
-                    <h2 className={'text-xl group-hover:text-2xl group-hover:animate-wave duration-150 ease-in-out'}>
+                    <h2 className={'typewrite'}>HELLO!!!</h2>
+                    <span className={'text-xl group-hover:text-2xl group-hover:animate-wave duration-150 ease-in-out'}>
                         👋
-                    </h2>
+                    </span>
                 </div>
                 <div className={'sm:text-center align-middle my-5 mx-5 sm:mx-0 ease-in-out duration-1000'}>
                     <p className={'text-sm lg:text-lg align-middle text-gray-500'}>
                         Self-learning software engineering through research & development.
+                        Feel free to checkout my work :)
                     </p>
                 </div>
                 <div className={'ml-5 sm:mx-0 my-5 flex flex-row justify-start sm:justify-center'}>
@@ -78,10 +80,15 @@ export default function Intro() {
             >
                 <div className={'absolute place-items-center bottom-0'}>
                     <a href={'#AboutMe'}>
-                        <span className={'mb-2'}>About Me</span>
+                        <span
+                            id={'aboutMeLabel'}
+                            className={'mb-2'}
+                        >
+                            About Me
+                        </span>
                     </a>
                     <div className={'mx-auto animate-bounce w-4 lg:w-7'}>
-                        <HiOutlineChevronDoubleDown />
+                        <HiOutlineChevronDoubleDown/>
                     </div>
                 </div>
             </div>
