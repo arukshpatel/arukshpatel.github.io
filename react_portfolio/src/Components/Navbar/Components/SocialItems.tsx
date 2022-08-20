@@ -1,4 +1,4 @@
-import React, { HTMLAttributes, useState } from 'react'
+import React from 'react'
 import {
     RiFacebookLine,
     RiGithubLine,
@@ -9,9 +9,10 @@ import {
     RiSnapchatFill,
     RiSpotifyLine,
     RiTwitterLine,
-} from 'react-icons/ri'
+}            from 'react-icons/ri'
 
-interface SocialItemReq {
+interface SocialItemReq
+{
     name: string
     icon: JSX.Element
     toIconCol: string
@@ -46,7 +47,7 @@ function topDiff(height: number) {
 }
 
 export default function SocialItemsList(params: { flexCol?: string; flexRow?: string }) {
-    const [windowHeight, setWindowHeight] = useState(window.innerHeight)
+    const [windowHeight, setWindowHeight] = React.useState(window.innerHeight)
 
     React.useEffect(() => {
         function handleResize() {
@@ -61,7 +62,7 @@ export default function SocialItemsList(params: { flexCol?: string; flexRow?: st
             <ul className={'space-y-1'}>
                 <SocialItemEl
                     name={'Github'}
-                    icon={<RiGithubLine />}
+                    icon={<RiGithubLine/>}
                     toIconCol={'text-linkedin'}
                     link={'https://www.github.com/arukshpatel'}
                     elementBackgroundClassNames={
@@ -71,7 +72,7 @@ export default function SocialItemsList(params: { flexCol?: string; flexRow?: st
                 />
                 <SocialItemEl
                     name={'LinkedIn'}
-                    icon={<RiLinkedinLine />}
+                    icon={<RiLinkedinLine/>}
                     toIconCol={'text-linkedIn '}
                     link={'https://www.github.com/arukshpatel'}
                     elementBackgroundClassNames={
@@ -81,7 +82,7 @@ export default function SocialItemsList(params: { flexCol?: string; flexRow?: st
                 />
                 <SocialItemEl
                     name={'E-Mail'}
-                    icon={<RiMailSendLine />}
+                    icon={<RiMailSendLine/>}
                     toIconCol={'text-mail '}
                     link={'https://www.github.com/arukshpatel'}
                     elementBackgroundClassNames={
@@ -90,11 +91,11 @@ export default function SocialItemsList(params: { flexCol?: string; flexRow?: st
                     // textBackgroundClassNames={'bg-gradient-to-r from-mail bg-clip-text'}
                 />
                 <li>
-                    <div className={'my-4'} />
+                    <div className={'my-4'}/>
                 </li>
                 <SocialItemEl
                     name={'Facebook'}
-                    icon={<RiFacebookLine />}
+                    icon={<RiFacebookLine/>}
                     toIconCol={'text-facebook '}
                     link={'https://facebook.com/aruk5h/'}
                     elementBackgroundClassNames={
@@ -104,7 +105,7 @@ export default function SocialItemsList(params: { flexCol?: string; flexRow?: st
                 />
                 <SocialItemEl
                     name={'Instagram'}
-                    icon={<RiInstagramLine />}
+                    icon={<RiInstagramLine/>}
                     toIconCol={'text-instagram '}
                     link={'https://instagram.com/aruk5h/'}
                     elementBackgroundClassNames={
@@ -114,7 +115,7 @@ export default function SocialItemsList(params: { flexCol?: string; flexRow?: st
                 />
                 <SocialItemEl
                     name={'Snapchat'}
-                    icon={<RiSnapchatLine />}
+                    icon={<RiSnapchatLine/>}
                     toIconCol={'text-snapchat group-hover:text-black '}
                     link={'https://snapchat.com/add/aruk5h/'}
                     elementBackgroundClassNames={
@@ -124,7 +125,7 @@ export default function SocialItemsList(params: { flexCol?: string; flexRow?: st
                 />
                 <SocialItemEl
                     name={'Twitter'}
-                    icon={<RiTwitterLine />}
+                    icon={<RiTwitterLine/>}
                     toIconCol={'text-twitter '}
                     link={'https://twitter.com/aruk5h/'}
                     elementBackgroundClassNames={
@@ -133,11 +134,11 @@ export default function SocialItemsList(params: { flexCol?: string; flexRow?: st
                     // textBackgroundClassNames={'bg-gradient-to-r from-twitter bg-clip-text'}
                 />
                 <li>
-                    <div className={'my-4'} />
+                    <div className={'my-4'}/>
                 </li>
                 <SocialItemEl
                     name={'Spotify'}
-                    icon={<RiSpotifyLine />}
+                    icon={<RiSpotifyLine/>}
                     toIconCol={'text-spotify '}
                     link={'https://open.spotify.com/user/aruk5h'}
                     elementBackgroundClassNames={

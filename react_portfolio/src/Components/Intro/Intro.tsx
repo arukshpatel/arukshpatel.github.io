@@ -8,7 +8,7 @@ export default function Intro() {
         <div className={'mx-auto w-screen h-screen max-w-[1080px] -z-50'}>
             <div className={'container h-fit py-[35vh] backdrop-blur-md'}>
                 <div className={'introHeading group'}>
-                    <h2 className={'typewrite'}>HELLO!!!</h2>
+                    <h2 className={''}>HELLO!!!</h2>
                     <span className={'text-xl group-hover:text-2xl group-hover:animate-wave duration-150 ease-in-out'}>
                         👋
                     </span>
@@ -20,28 +20,7 @@ export default function Intro() {
                     </p>
                 </div>
                 <div className={'ml-5 sm:mx-0 my-5 flex flex-row justify-start sm:justify-center'}>
-                    <button
-                        className={
-                            'border-blue-500 text-blue-700 hover:bg-blue-500 hidden sm:block introHeading-Button'
-                        }
-                    >
-                        Resume
-                    </button>
-                    <button
-                        className={
-                            'border-gray-500 text-gray-700 hover:bg-gray-500 hidden sm:block introHeading-Button'
-                        }
-                    >
-                        Projects
-                    </button>
-                    <button
-                        className={
-                            'border-teal-500 text-teal-700 hover:bg-teal-500 hidden sm:block introHeading-Button'
-                        }
-                    >
-                        Hire Me
-                    </button>
-                    <button className={'block sm:hidden temporary-bounce'}>
+                    <button className={'flex temporary-bounce'}>
                         <div className={'group '}>
                             <div
                                 className={
@@ -52,7 +31,7 @@ export default function Intro() {
                                 <span
                                     className={
                                         'underline underline-offset-0 decoration-2 decoration-black/10' +
-                                        ' group-hover:decoration-white/50'
+                                        ' group-hover:decoration-white/50 sm:text-xl'
                                     }
                                 >
                                     My Work
@@ -70,6 +49,28 @@ export default function Intro() {
                             </div>
                         </div>
                     </button>
+                    {/*<button*/}
+                    {/*    className={*/}
+                    {/*        'border-blue-500 text-blue-700 hover:bg-blue-500 hidden sm:block introHeading-Button'*/}
+                    {/*    }*/}
+                    {/*>*/}
+                    {/*    Resume*/}
+                    {/*</button>*/}
+                    {/*<button*/}
+                    {/*    className={*/}
+                    {/*        'border-gray-500 text-gray-700 hover:bg-gray-500 hidden sm:block introHeading-Button'*/}
+                    {/*    }*/}
+                    {/*>*/}
+                    {/*    Projects*/}
+                    {/*</button>*/}
+                    {/*<button*/}
+                    {/*    className={*/}
+                    {/*        'border-teal-500 text-teal-700 hover:bg-teal-500 hidden sm:block introHeading-Button'*/}
+                    {/*    }*/}
+                    {/*>*/}
+                    {/*    Hire Me*/}
+                    {/*</button>*/}
+
                 </div>
             </div>
             <div
