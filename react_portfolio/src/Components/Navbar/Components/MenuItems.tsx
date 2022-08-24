@@ -32,7 +32,7 @@ function NonCollapsedList() {
 
 function CollapsedList() {
     return (
-        <ul className={'lg:hidden w-full my-2  space-y-1'}>
+        <ul className={'lg:hidden w-full my-2 space-y-1'}>
             <li className={'navbar-Button-side'}>
                 <a href={'#'}>Home 🏠</a>
             </li>
@@ -50,7 +50,8 @@ function CollapsedList() {
 }
 
 export default function MenuItems(props: { collapsed: boolean }) {
-    if(props.collapsed) return <div className={'absolute w-full h-screen  bg-red/[.90]'}>{CollapsedList()}</div>
+    if(props.collapsed) return <div
+        className={'bg-black/20 absolute w-full h-screen '}>{CollapsedList()}</div>
 
     return NonCollapsedList()
 }

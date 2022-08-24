@@ -1,9 +1,10 @@
 import { FaArrowRight }               from 'react-icons/fa'
 import { HiOutlineChevronDoubleDown } from 'react-icons/hi'
-import React                          from 'react'
+import React, { useState, useEffect } from 'react'
 import './intro.css';
 
 export default function Intro() {
+
     return (
         <div className={'mx-auto w-screen h-screen max-w-[1080px] -z-50'}>
             <div className={'container h-fit py-[35vh] backdrop-blur-md'}>
@@ -14,47 +15,49 @@ export default function Intro() {
                     </span>
                 </div>
                 <div className={'sm:text-center align-middle my-5 mx-5 sm:mx-0 ease-in-out duration-1000'}>
-                    <p className={'text-sm lg:text-lg align-middle text-gray-500'}>
-                        Self-learning software engineering through research & development.
-                        Feel free to checkout my work :)
+                    <p className={'text-base lg:text-lg align-middle text-gray-500'}>
+                        Nice to see you're interested in learning more about me! <br/> Feel free to checkout my work 😊
                     </p>
                 </div>
-                <div className={'ml-5 sm:mx-0 my-5 flex flex-row justify-start sm:justify-center'}>
-                    <button className={'flex temporary-bounce'}>
-                        <div className={'group '}>
-                            <div
-                                className={
-                                    'MyWorkButton flex flex-row mx-5 my-2 hover:mx-0 hover:my-0' +
-                                    ' hover:px-5 hover:py-2'
-                                }
-                            >
-                                <span
+                <div className={'ml-5 sm:mx-0 my-5 flex flex-row justify-start sm:justify-center ease-in-out' +
+                    ' duration-1000'}>
+                    <a href={'#MyWork'}>
+                        <button className={'flex temporary-bounce'}>
+                            <div className={'group '}>
+                                <div
                                     className={
-                                        'underline underline-offset-0 decoration-2 decoration-black/10' +
-                                        ' group-hover:decoration-white/50 sm:text-xl'
+                                        'MyWorkButton flex flex-row mx-5 my-2 hover:mx-0 hover:my-0' +
+                                        ' hover:px-5 hover:py-2'
                                     }
                                 >
-                                    My Work
-                                </span>
-                                <div
-                                    className={'bg-gradient-to-r rounded-full from-rose-500 to-purple-400 bg-clip-text'}
-                                >
-                                    <FaArrowRight
+                                    <span
                                         className={
-                                            'duration-300 text-black/30 group-hover:text-white/50' +
-                                            ' animate-bounceRight'
+                                            'underline underline-offset-0 decoration-2 decoration-black/10' +
+                                            ' group-hover:decoration-white/50 sm:text-xl'
                                         }
-                                    />
+                                    >
+                                        My Work
+                                    </span>
+                                    <div
+                                        className={'bg-gradient-to-r rounded-full from-rose-500 to-purple-400 bg-clip-text'}
+                                    >
+                                        <FaArrowRight
+                                            className={
+                                                'duration-300 text-black/30 group-hover:text-white/50' +
+                                                ' animate-bounceRight'
+                                            }
+                                        />
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </button>
+                        </button>
+                    </a>
                     {/*<button*/}
                     {/*    className={*/}
                     {/*        'border-blue-500 text-blue-700 hover:bg-blue-500 hidden sm:block introHeading-Button'*/}
                     {/*    }*/}
                     {/*>*/}
-                    {/*    Resume*/}
+                    {/*    MyWork*/}
                     {/*</button>*/}
                     {/*<button*/}
                     {/*    className={*/}
@@ -79,7 +82,9 @@ export default function Intro() {
                     ' place-items-center text-gray-500 hover:text-black bg-gradient-to-t'
                 }
             >
-                <div className={'absolute place-items-center bottom-0'}>
+
+                <div id={'AboutMeSection'} className={'absolute place-items-center bottom-0'}
+                >
                     <a href={'#AboutMe'}>
                         <span
                             id={'aboutMeLabel'}

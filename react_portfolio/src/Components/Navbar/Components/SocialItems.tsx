@@ -1,4 +1,5 @@
 import React from 'react'
+
 import {
     RiFacebookLine,
     RiGithubLine,
@@ -6,10 +7,9 @@ import {
     RiLinkedinLine,
     RiMailSendLine,
     RiSnapchatLine,
-    RiSnapchatFill,
     RiSpotifyLine,
     RiTwitterLine,
-}            from 'react-icons/ri'
+} from 'react-icons/ri'
 
 interface SocialItemReq
 {
@@ -80,15 +80,15 @@ export default function SocialItemsList(params: { flexCol?: string; flexRow?: st
                     }
                     // textBackgroundClassNames={'bg-gradient-to-r from-white to-linkedIn bg-clip-text'}
                 />
+
                 <SocialItemEl
                     name={'E-Mail'}
                     icon={<RiMailSendLine/>}
                     toIconCol={'text-mail '}
-                    link={'https://www.github.com/arukshpatel'}
+                    link={'mailto:arukshjpatel@gmail.com'}
                     elementBackgroundClassNames={
                         'hover:bg-gradient-to-r bg-gradient-to-l from-mail/[0.4] to-transparent'
                     }
-                    // textBackgroundClassNames={'bg-gradient-to-r from-mail bg-clip-text'}
                 />
                 <li>
                     <div className={'my-4'}/>
