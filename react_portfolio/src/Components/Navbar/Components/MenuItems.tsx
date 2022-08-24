@@ -1,18 +1,24 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 function NonCollapsedList() {
     return (
         <ul className={'hidden lg:flex lg:text-lg place-items-center text-center gap-x-3'}>
-            <li className={'navbar-Button ease-in-out duration-150 text-blue-500'} id={'ResumeButton'}>
+            <li
+                className={'navbar-Button ease-in-out duration-150 text-[#559CC8] hover:text-sky-600'}
+                id={'ResumeButton'}
+            >
                 <a href={'#'}>Resume 📃</a>
             </li>
-            <li className={'navbar-Button ease-in-out duration-150 text-gray-700 '} id={'ProjectButton'}>
+            <li
+                className={'navbar-Button ease-in-out duration-150 hover:text-sky-600 text-[#559CC8]'}
+                id={'ProjectButton'}
+            >
                 <a href={'#'}>Projects 💾</a>
             </li>
             <li
                 className={
                     'navbar-Button ease-in-out duration-150 rounded-xl' +
-                    ' drop-shadow-2xl' +
+                    ' drop-shadow-lg' +
                     ' hover:decoration-white hover:drop-shadow-2xl' +
                     ' hover:text-white'
                 }
@@ -26,7 +32,7 @@ function NonCollapsedList() {
 
 function CollapsedList() {
     return (
-        <ul className={'lg:hidden w-full my-2  space-y-1'}>
+        <ul className={'lg:hidden w-full my-2 space-y-1'}>
             <li className={'navbar-Button-side'}>
                 <a href={'#'}>Home 🏠</a>
             </li>
@@ -44,7 +50,8 @@ function CollapsedList() {
 }
 
 export default function MenuItems(props: { collapsed: boolean }) {
-    if (props.collapsed) return <div className={'absolute w-full h-screen  bg-red/[.90]'}>{CollapsedList()}</div>
+    if(props.collapsed) return <div
+        className={'bg-black/20 absolute w-full h-screen '}>{CollapsedList()}</div>
 
     return NonCollapsedList()
 }
