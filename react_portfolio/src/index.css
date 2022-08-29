@@ -6,7 +6,7 @@
 
 
 body {
-    @apply font-nunito scroll-smooth overflow-auto;
+    @apply font-nunito scroll-smooth;
 }
 
 
@@ -53,15 +53,6 @@ body {
 
 }
 
-.socialItemName {
-    @apply text-white
-    font-semibold;
-}
-
-.socialItemIcon {
-    @apply left-0 my-auto;
-}
-
 .introHeading {
     @apply text-2xl lg:text-3xl font-mono font-bold ease-in-out duration-1000
     w-full grid grid-cols-2 grid-rows-none justify-start sm:text-center px-5 sm:px-0
@@ -85,4 +76,13 @@ body {
 
 .typewrite {
     @apply border-r-4 border-r-green-700 text-center
+}
+
+.hide-scroll-bar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.hide-scroll-bar::-webkit-scrollbar {
+    display: none;
 }

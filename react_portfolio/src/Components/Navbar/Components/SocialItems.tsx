@@ -26,16 +26,16 @@ function SocialItemEl(req: SocialItemReq) {
         <li
             className={
                 'w-full py-1 px-2 flex flex-col ' +
-                'ml-[-75%] hover:ml-[0%] group duration-300 rounded-r-2xl ' +
-                'bg-white/10 duration-300 ease-in-out' +
+                'ml-[-75%] hover:ml-[0%] duration-300 rounded-r-2xl ' +
+                'bg-white/10 duration-300 ease-in-out ' +
                 'hover:drop-shadow-2xl drop-shadow-xl backdrop-blur-xl ' +
                 req.elementBackgroundClassNames
             }
         >
             <div className={`${req.textBackgroundClassNames}`}>
                 <a className={`socialItemLinkElement`} href={req.link} target={'_blank'} rel={'noreferrer'}>
-                    <div className={`socialItemName`}>{req.name}</div>
-                    <div className={'socialItemIcon ' + req.toIconCol}>{req.icon}</div>
+                    <div className={'text-white font-semibold'}>{req.name}</div>
+                    <div className={'left-0 my-auto ' + req.toIconCol}>{req.icon}</div>
                 </a>
             </div>
         </li>
@@ -58,7 +58,8 @@ export default function SocialItemsList(params: { flexCol?: string; flexRow?: st
     })
 
     return (
-        <div className={'z-50 invisible sm:visible fixed flex flex-col left-0 ' + topDiff(windowHeight)}>
+        <div
+            className={'z-10 w-fit invisible sm:visible fixed flex flex-col left-0 my-auto ' + topDiff(windowHeight)}>
             <ul className={'space-y-1'}>
                 <SocialItemEl
                     name={'Github'}
