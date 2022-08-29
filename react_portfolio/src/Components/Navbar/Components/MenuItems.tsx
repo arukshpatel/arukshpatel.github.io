@@ -7,7 +7,7 @@ function NonCollapsedList() {
                 className={'navbar-Button ease-in-out duration-150 text-[#559CC8] hover:text-sky-600'}
                 id={'ResumeButton'}
             >
-                <a href={'#'}>Resume 📃</a>
+                <a href={'#MyWork'}>Resume 📃</a>
             </li>
             <li
                 className={'navbar-Button ease-in-out duration-150 hover:text-sky-600 text-[#559CC8]'}
@@ -31,16 +31,20 @@ function NonCollapsedList() {
 }
 
 function CollapsedList() {
+    function navigate(path: string) {
+
+    }
+
     return (
         <ul className={'lg:hidden w-full my-2 space-y-1'}>
             <li className={'navbar-Button-side'}>
-                <a href={'#'}>Home 🏠</a>
+                <a href={'/'}>Home 🏠</a>
             </li>
             <li className={'navbar-Button-side'}>
-                <a href={'#'}>Resume 📃</a>
+                <a href={'#MyWork'}>Resume 📃</a>
             </li>
             <li className={'navbar-Button-side'}>
-                <a href={'#'}>Projects 💾</a>
+                <a href={'MyW'}>Projects 💾</a>
             </li>
             <li className={'navbar-Button-side'}>
                 <a href={'#'}>Hire Me 👨‍💻</a>
@@ -51,7 +55,7 @@ function CollapsedList() {
 
 export default function MenuItems(props: { collapsed: boolean }) {
     if(props.collapsed) return <div
-        className={'bg-black/20 absolute w-full h-screen '}>{CollapsedList()}</div>
+        className={'bg-black/40 absolute w-full h-screen '}>{CollapsedList()}</div>
 
     return NonCollapsedList()
 }
