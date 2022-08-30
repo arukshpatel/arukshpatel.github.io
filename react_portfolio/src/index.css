@@ -6,7 +6,7 @@
 
 
 body {
-    @apply font-nunito scroll-smooth overflow-auto;
+    @apply font-nunito scroll-smooth;
 }
 
 
@@ -30,17 +30,12 @@ body {
     @apply hover:backdrop-blur-sm rounded-lg px-7 py-3 pl-3 text-xl font-nunito font-semibold place-items-center;
 }
 
-.navbar-Button-side {
-    @apply px-14 py-5 text-lg w-full text-left font-semibold font-nunito hover:text-xl
-    rounded-xl ease-in-out duration-150 hover:bg-gray-400/[.75] bg-white backdrop-blur-lg
-}
-
 .navbar-brand {
     @apply font-bold font-serif text-3xl mx-5 lg:text-4xl text-center bg-gradient-to-r from-rose-500 to-purple-400 bg-clip-text drop-shadow-lg text-transparent;
 }
 
 .navbar-menuButton {
-    @apply lg:hidden  rounded-full border-transparent mx-5 bg-gradient-to-r from-rose-500 to-purple-400 bg-clip-content
+    @apply lg:hidden rounded-full border-transparent mx-5 bg-gradient-to-r from-rose-500 to-purple-400 bg-clip-content
     duration-300
 }
 
@@ -51,15 +46,6 @@ body {
     space-x-2
     flex
 
-}
-
-.socialItemName {
-    @apply text-white
-    font-semibold;
-}
-
-.socialItemIcon {
-    @apply left-0 my-auto;
 }
 
 .introHeading {
@@ -85,4 +71,13 @@ body {
 
 .typewrite {
     @apply border-r-4 border-r-green-700 text-center
+}
+
+.hide-scroll-bar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.hide-scroll-bar::-webkit-scrollbar {
+    display: none;
 }

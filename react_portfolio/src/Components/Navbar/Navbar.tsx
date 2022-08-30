@@ -59,7 +59,7 @@ export default function Navbar() {
                 </div>
 
                 <Transition
-                    className={'lg:hidden w-full'}
+                    className={'lg:hidden w-screen'}
                     show={navOpen}
                     appear={true}
                     enter="duration-300 ease-in-out"
