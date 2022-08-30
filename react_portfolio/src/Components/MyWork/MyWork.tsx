@@ -7,9 +7,9 @@ import { InProgressData, CompletedData } from "./Assets/Data/CarouselData";
 export default function MyWork() {
 
     function InProgressCards() {
-        return InProgressData.map(card => {
+        return InProgressData.map((card, index) => {
             return <Card title={card.title}
-                         key={card.title}
+                         key={index}
                          description={card.description}
                          languages={card.languages}
                          date={card.date}
@@ -36,17 +36,27 @@ export default function MyWork() {
             <div className={'mx-auto w-full'}>
 
                 <Carousel sectionTitle={'In-progress:'}>
-                    {InProgressData.map(card => <Card title={card.title} description={card.description} date={card.date}
-                                                      languages={card.languages} siteLink={card.siteLink}
-                                                      githubLink={card.githubLink}/>)}
+                    {InProgressData.map((card, index) =>
+                        <Card title={card.title}
+                              description={card.description}
+                              date={card.date}
+                              languages={card.languages}
+                              siteLink={card.siteLink}
+                              githubLink={card.githubLink}/>
+                    )}
 
                 </Carousel>
             </div>
             <div className={'mx-auto w-full'}>
                 <Carousel sectionTitle={'Completed:'}>
-                    {CompletedData.map(card => <Card title={card.title} description={card.description} date={card.date}
-                                                     languages={card.languages} siteLink={card.siteLink}
-                                                     githubLink={card.githubLink}/>)}
+                    {CompletedData.map((card, index) =>
+                        <Card title={card.title}
+                              description={card.description}
+                              date={card.date}
+                              languages={card.languages}
+                              siteLink={card.siteLink}
+                              githubLink={card.githubLink}
+                        />)}
                 </Carousel>
             </div>
         </div>

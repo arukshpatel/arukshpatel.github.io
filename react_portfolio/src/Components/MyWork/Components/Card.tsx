@@ -1,4 +1,5 @@
-import React from 'react'
+import React   from 'react'
+import { log } from "util";
 
 export interface CardProp
 {
@@ -8,14 +9,11 @@ export interface CardProp
     date: string
     githubLink?: string
     siteLink?: string
-    className?: string
+    className?: string,
+    key?: number,
 }
 
 export default function Card(props: CardProp) {
-
-    function visitPage(link: string) {
-        return props.githubLink ? window.location.href = link : '';
-    }
 
     function gitButton() {
         if(props.githubLink) {
@@ -59,13 +57,15 @@ export default function Card(props: CardProp) {
         }
     }
 
-    function tag(text: string) {
+    function tag(text: string, index: string) {
+
         return (
             <span
                 className={
                     'h-fit inline-block bg-slate-500 rounded-full px-3 py-1 text-xs font-semibold text-gray-100 mr-2' +
                     ' mb-2'
                 }
+                key={index}
             >
                 {text}
             </span>
@@ -74,17 +74,17 @@ export default function Card(props: CardProp) {
 
     function languageTags() {
         if(props.languages) {
-            return props.languages.map((language: any) => {
-                return tag(language)
+            return props.languages.map((language: string, index: number) => {
+                return tag(language, index.toString());
             })
         } else {
-            return tag('NO TAGS')
+            return tag('NO TAGS', '0')
         }
     }
 
     return (
-        <div className={'inline-block mx-3 group ' + (props.className ? props.className : '')}>
-            {/*Card2*/}
+        <div key={props.key ? props.key.toString() : ''}
+             className={'inline-block mx-3 group ' + (props.className ? props.className : '')}>
             <div
                 className={
                     'w-64 h-72 sm:w-80 sm:h-80 max-w-xs overflow-y-scroll rounded-md shadow-md' +

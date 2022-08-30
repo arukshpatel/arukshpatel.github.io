@@ -7,7 +7,7 @@ function Carousel(props: any) {
         <div className="flex flex-col m-auto p-auto">
             <h4
                 className={'text-xl w-full text-center sm:text-left mx-auto lg:pl-40 sm:pl-20 underline' +
-                    ' text-slate-700 '}>
+                    ' text-slate-700 max-w-[1440px]'}>
                 {props.sectionTitle}
             </h4>
 
