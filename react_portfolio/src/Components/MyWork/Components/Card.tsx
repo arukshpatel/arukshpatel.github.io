@@ -1,6 +1,6 @@
 import React from 'react'
 
-interface CardProp
+export interface CardProp
 {
     title: string
     description: string
