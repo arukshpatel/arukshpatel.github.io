@@ -1,22 +1,36 @@
-export const CarouselData = [
+interface CardProp
+{
+    title: string
+    description: string
+    languages: string[]
+    date: string
+    githubLink?: string
+    siteLink?: string
+    className?: string
+}
+
+export const InProgressData: CardProp[] = [
     {
-        image:
-            "https://images.unsplash.com/photo-1546768292-fb12f6c92568?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+        title: 'This portfolio',
+        description: 'This website has been in development and has gone through many renditions throughout my' +
+            ' career. I believe it will never reach the "completed" state, as it is my "sandbox" in a way, where I' +
+            ' like to try out new front-end technologies and methodologies.',
+        languages: ['HTML', "CSS", 'TypeScript', 'React.js', 'TailwindCSS', 'Node.js'],
+        date: 'Spring 2017 - Present',
+        githubLink: 'https://github.com/arukshpatel/arukshpatel.github.io',
+        siteLink: 'https://arukshpatel.info',
     },
-    {
-        image:
-            "https://images.unsplash.com/photo-1501446529957-6226bd447c46?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1489&q=80",
-    },
-    {
-        image:
-            "https://images.unsplash.com/photo-1483729558449-99ef09a8c325?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80",
-    },
-    {
-        image:
-            "https://images.unsplash.com/photo-1475189778702-5ec9941484ae?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1351&q=80",
-    },
-    {
-        image:
-            "https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80",
-    },
+
 ];
+
+export const CompletedData: CardProp[] = [
+    {
+        title: 'ChuggBot',
+        description: 'Discord bot to store and retrieve Chegg data. This bot was developed to facilatate students,' +
+            ' especially during the study season. It is HARD keeping track of which material you have studied, but' +
+            ' not anymore. This bot can do that for you.',
+        languages: ['TypeScript', 'Selenium'],
+        date: 'Completed: Nov 4, 2021',
+        githubLink: 'https://github.com/arukshpatel/ChuggBot',
+    },
+]

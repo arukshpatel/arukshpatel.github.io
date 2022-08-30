@@ -1,10 +1,22 @@
 import React from 'react'
 
-import Carousel from './Components/Carousel'
-import Card     from "./Components/Card";
-// import Card     from './Components/Card'
+import Carousel                          from './Components/Carousel'
+import Card                              from "./Components/Card";
+import { InProgressData, CompletedData } from "./Assets/Data/CarouselData";
 
 export default function MyWork() {
+
+    function InProgressCards() {
+        return InProgressData.map(card => {
+            return <Card title={card.title}
+                         description={card.description}
+                         languages={card.languages}
+                         date={card.date}
+                         githubLink={card.githubLink}
+                         siteLink={card.siteLink}/>
+        })
+    }
+
     return (
         <div id={'MyWork'} className={'h-fit pt-16 sm:pt-24 bg-slate-200'}>
             {/*<Background/>*/}
@@ -21,38 +33,17 @@ export default function MyWork() {
             </div>
 
             <div className={'mx-auto w-full'}>
-                <Carousel sectionTitle={'In-progress:'} className={'bg-black'}>
-                    <Card title={"Subway Utilities"}
-                          description={"Lorem"}
-                          date={'Spring 2017'}
-                          languages={["Java"]}
-                          githubLink={'git'}
-                          siteLink={'git'}
-                    />
-                    <Card title={"Subway Utilities"}
-                          description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut porttitor leo a diam sollicitudin tempor id. Id nibh tortor id aliquet lectus proin nibh nisl condimentum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut porttitor leo a diam sollicitudin tempor id. Id nibh tortor id aliquet lectus proin nibh nisl condimentum."}
-                          date={'Spring 2017'}
-                          languages={["Java", "Python", "CSS", "HTML", "React.js", "Selenium", "Node.js"]}
-                          githubLink={'git'}
-                          siteLink={'git'}
-                    />
+                <Carousel sectionTitle={'In-progress:'}>
+                    {InProgressData.map(card => <Card title={card.title} description={card.description} date={card.date}
+                                                      languages={card.languages} siteLink={card.siteLink}
+                                                      githubLink={card.githubLink}/>)}
                 </Carousel>
             </div>
             <div className={'mx-auto w-full'}>
-                <Carousel sectionTitle={'Completed:'} className={'bg-black'}>
-                    <Card title={"Subway Utilities"}
-                          description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut porttitor leo a diam sollicitudin tempor id. Id nibh tortor id aliquet lectus proin nibh nisl condimentum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut porttitor leo a diam sollicitudin tempor id. Id nibh tortor id aliquet lectus proin nibh nisl condimentum."}
-                          date={'Spring 2017'}
-                          languages={["Java", "Python", "CSS", "HTML", "React.js", "Selenium", "Node.js"]}
-                          githubLink={'git'}
-                          siteLink={'git'}
-                    />
-                    <Card title={"Subway Utilities"}
-                          description={"Lorem"}
-                          date={'Spring 2017'}
-                          languages={["Java"]}
-                          siteLink={'git'}
-                    />
+                <Carousel sectionTitle={'Completed:'}>
+                    {CompletedData.map(card => <Card title={card.title} description={card.description} date={card.date}
+                                                     languages={card.languages} siteLink={card.siteLink}
+                                                     githubLink={card.githubLink}/>)}
                 </Carousel>
             </div>
         </div>

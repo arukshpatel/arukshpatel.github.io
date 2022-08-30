@@ -12,18 +12,26 @@ interface CardProp
 }
 
 export default function Card(props: CardProp) {
+
+    function visitPage(link: string) {
+        return props.githubLink ? window.location.href = link : '';
+    }
+
     function gitButton() {
         if(props.githubLink) {
             return (
-                <button
-                    type={"button"}
-                    className={
-                        'bg-github text-white px-3 py-1 w-full text-middle' +
-                        ' transition duration-300 ease-in-out text-base'
-                    }
-                >
-                    Github
-                </button>
+                <a href={props.githubLink}
+                   className={'transition duration-300 ease-in-out text-base bg-github text-white px-3 py-1 w-full text-middle'}>
+                    <button
+                        type={"button"}
+                        className={
+                            'bg-github text-white px-3 py-1 w-full text-middle' +
+                            ' transition duration-300 ease-in-out text-base'
+                        }
+                    >
+                        Github
+                    </button>
+                </a>
             );
         }
 
@@ -33,15 +41,18 @@ export default function Card(props: CardProp) {
     function siteButton() {
         if(props.siteLink) {
             return (
-                <button
-                    type={'button'}
-                    className={
-                        'bg-facebook text-white px-3 py-1 w-full text-middle' +
-                        ' transition duration-300 ease-in-out text-base'
-                    }
-                >
-                    Site
-                </button>
+                <a href={props.siteLink}
+                   className={'bg-facebook text-white px-3 py-1 w-full text-middle transition duration-300 ease-in-out text-base'}>
+                    <button
+                        type={'button'}
+                        className={
+                            'bg-facebook text-white px-3 py-1 w-full text-middle transition duration-300 ease-in-out' +
+                            ' text-base'
+                        }
+                    >
+                        Site
+                    </button>
+                </a>
             )
         } else {
             return ''
@@ -77,7 +88,7 @@ export default function Card(props: CardProp) {
             <div
                 className={
                     'w-64 h-72 sm:w-80 sm:h-80 max-w-xs overflow-y-scroll rounded-md shadow-md' +
-                    ' hover:bg-white' +
+                    ' hover:bg-white hide-scroll-bar' +
                     ' bg-white/70 hover:shadow-xl transition-all duration-300 ease-in-out flex flex-col'
                 }
             >
