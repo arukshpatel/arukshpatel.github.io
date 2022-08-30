@@ -5,27 +5,32 @@ function NonCollapsedList() {
         <ul className={'hidden lg:flex lg:text-lg place-items-center text-center gap-x-3'}>
             <ul className={'hidden lg:flex lg:text-lg place-items-center text-center gap-x-3'}>
                 <li>
-                    <a className={'navbar-Button ease-in-out duration-150 text-[#559CC8] hover:text-sky-600'}
-                       id={'ResumeButton'} href={'#MyWork'}>
-                        <button>Resume 📃</button>
+                    <a href={'#MyWork'}>
+                        <button id={'ResumeButton'}
+                                className={'navbar-Button ease-in-out duration-150 text-[#559CC8] hover:text-sky-600'}>
+                            Resume 📃
+                        </button>
                     </a>
                 </li>
                 <li>
-                    <a className={'navbar-Button ease-in-out duration-150 hover:text-sky-600 text-[#559CC8]'}
-                       id={'ProjectButton'} href={'#'}>
-                        <button>Projects 💾</button>
+                    <a href={'#'}>
+                        <button className={'navbar-Button ease-in-out duration-150 hover:text-sky-600 text-[#559CC8]'}
+                                id={'ProjectButton'}>
+                            Projects 💾
+                        </button>
                     </a>
                 </li>
                 <li>
-                    <a className={
-                        'navbar-Button ease-in-out duration-150 rounded-xl' +
-                        ' drop-shadow-lg' +
-                        ' hover:decoration-white hover:drop-shadow-2xl' +
-                        ' hover:text-white'
-                    }
-                       id={'HireMeButton'}
-                       href={'#'}>
-                        <button>Hire Me 👨‍💻</button>
+                    <a href={'#'}>
+                        <button className={
+                            'navbar-Button ease-in-out duration-150 rounded-xl' +
+                            ' drop-shadow-lg' +
+                            ' hover:decoration-white hover:drop-shadow-2xl' +
+                            ' hover:text-white'
+                        }
+                                id={'HireMeButton'}>
+                            Hire Me 👨‍💻
+                        </button>
                     </a>
                 </li>
             </ul>
