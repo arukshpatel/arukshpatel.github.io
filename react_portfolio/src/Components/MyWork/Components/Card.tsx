@@ -63,7 +63,7 @@ export default function Card(props: CardProp) {
             <span
                 className={
                     'h-fit inline-block bg-slate-500 rounded-full px-3 py-1 text-xs font-semibold text-gray-100 mr-2' +
-                    ' mb-2'
+                    ' mb-2 font-mono tracking-wide'
                 }
                 key={index}
             >
