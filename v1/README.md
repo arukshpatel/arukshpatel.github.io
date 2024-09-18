@@ -1,2 +1,0 @@
-# arukshpatel.github.io
-Portfolio
