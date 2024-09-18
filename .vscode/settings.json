@@ -1,0 +1,19 @@
+{
+    "files.exclude": {
+        "**/.git": false,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/.idea": false,
+        "**/**.avoid": true,
+        "**/**._*": true
+    },
+    "terminal.integrated.cursorStyle": "block",
+    "files.associations": {
+        "*.css": "tailwindcss"
+    },
+    "tailwindCSS.emmetCompletions": true,
+    "task.allowAutomaticTasks": "on"
+}
